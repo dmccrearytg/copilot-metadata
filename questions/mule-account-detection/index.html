@@ -1,0 +1,1131 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Resources for teaching classes on Micro Simulators using generative AI and ChatGPT.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccrearytg.github.io/copilot-metadata/questions/mule-account-detection/">
+      
+      
+        <link rel="prev" href="../fraudster-detection/">
+      
+      
+        <link rel="next" href="../../document-data-model/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
+    
+    
+      
+        <title>Mule Account Detection - CoPilot Metadata</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#mule-account-detection" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="CoPilot Metadata" class="md-header__button md-logo" aria-label="CoPilot Metadata" data-md-component="logo">
+      
+  <img src="../../img/tg-logo-small.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CoPilot Metadata
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Mule Account Detection
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccrearytg/copilot-metadata" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="CoPilot Metadata" class="md-nav__button md-logo" aria-label="CoPilot Metadata" data-md-component="logo">
+      
+  <img src="../../img/tg-logo-small.png" alt="logo">
+
+    </a>
+    CoPilot Metadata
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccrearytg/copilot-metadata" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../generating-personas.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generating Personas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../generating-questions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generating Questions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Solution Kit Questions
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Solution Kit Questions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transaction-fraud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transaction Fraud
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../credit-card-application-fraud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Credit Card Application Fraud
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connected-customer-er/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connected Customer ER
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../know-your-customer-er/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Know Your Customer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fraudster-detection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fraudster Detection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Mule Account Detection
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Mule Account Detection
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Questions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persona-financial-fraud-investigator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persona: Financial Fraud Investigator
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persona-anti-money-laundering-compliance-officer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persona: Anti-Money Laundering Compliance Officer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persona-forensic-accountant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persona: Forensic Accountant
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persona-bank-auditor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persona: Bank Auditor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persona-legal-counsel-specializing-in-financial-crimes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persona: Legal Counsel specializing in financial crimes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persona-risk-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persona: Risk Manager
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persona-regulatory-compliance-officer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persona: Regulatory Compliance Officer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persona-law-enforcement-officer-specializing-in-financial-crimes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persona: Law Enforcement Officer specializing in financial crimes
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../document-data-model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Document Data Model
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Questions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persona-financial-fraud-investigator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persona: Financial Fraud Investigator
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persona-anti-money-laundering-compliance-officer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persona: Anti-Money Laundering Compliance Officer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persona-forensic-accountant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persona: Forensic Accountant
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persona-bank-auditor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persona: Bank Auditor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persona-legal-counsel-specializing-in-financial-crimes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persona: Legal Counsel specializing in financial crimes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persona-risk-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persona: Risk Manager
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persona-regulatory-compliance-officer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persona: Regulatory Compliance Officer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persona-law-enforcement-officer-specializing-in-financial-crimes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persona: Law Enforcement Officer specializing in financial crimes
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="mule-account-detection">Mule Account Detection</h1>
+<h2 id="description">Description</h2>
+<p>Mule account detection in financial crime is a critical endeavor aimed at identifying bank accounts that are used to receive and disperse money from illicit activities. These mule accounts, which may be involved either knowingly or unknowingly in these operations, present a significant challenge for financial institutions. The rapid movement of funds through an extensive and seemingly unconnected network of accounts, spread across numerous financial institutions, complicates the tracking and halting of such illicit transactions. Financial institutions are therefore tasked with detecting this activity promptly to prevent further fund transfers and ensure the return of assets to their rightful owners. TigerGraph's solutions address this challenge through a suite of sophisticated graph algorithms that enable real-time monitoring, feature engineering for machine learning, and anomaly detection to trace illegal funds effectively. Community Detection is employed to unveil clusters within the transaction network, highlighting groups of accounts that work in concert to move illicit funds. The Centrality (PageRank) algorithm identifies key accounts that act as central nodes in the distribution network, crucial for disrupting the flow of illicit money. Closeness (Shortest Path) analysis reveals the most direct routes for money laundering, aiding in the trace back to the source. Lastly, Deep Link Analysis uncovers hidden connections between accounts, providing a comprehensive understanding of the network's structure and operation. Together, these algorithms form the backbone of TigerGraph's approach to dismantling the complex networks of mule accounts, safeguarding the financial system against the movement of illicit funds.</p>
+<h2 id="prompt">Prompt</h2>
+<h2 id="personas">Personas</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">[</span>
+    <span class="s2">&quot;Financial Fraud Investigator&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Anti-Money Laundering Compliance Officer&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Forensic Accountant&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Bank Auditor&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Legal Counsel specializing in financial crimes&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Risk Manager&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Regulatory Compliance Officer&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Law Enforcement Officer specializing in financial crimes&quot;</span>
+<span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="questions">Questions</h2>
+<h2 id="persona-financial-fraud-investigator">Persona: Financial Fraud Investigator</h2>
+<ol>
+<li>What is the total volume of funds transferred through [suspected mule account number] in the [time period]?</li>
+<li>Have there been any unusual patterns or suspicious activities detected in [suspected mule account number] within the [time period]?</li>
+<li>Can you display a transaction network graph highlighting clusters related to [suspected mule account number]?</li>
+<li>Among the transactions in the [time period], can you identify the most direct routes for fund transfers linked to [suspected mule account number]?</li>
+<li>Who are the central accounts or nodes in the distribution network involving [suspected mule account number] in the [time period]?</li>
+<li>Run a Deep Link Analysis on the recent transactions related to [suspected mule account number] within the [time period].</li>
+<li>Can you identify any hidden connections related to [suspected mule account number] within the [time period]?</li>
+<li>Run a Centrality (PageRank) algorithm on the data for [suspected mule account number] to identify key accounts in the [time period].</li>
+<li>Can you provide a summary of all the activities associated with [suspected mule account number] in the [time period]?</li>
+<li>Based on the Closeness (Shortest Path) analysis, what is the most likely source of funds for [suspected mule account number] in the [time period]?</li>
+<li>Can you provide me the list of accounts that most interacted with [suspected mule account number] during the [time period]?</li>
+<li>Have there been any reported illicit activities associated with any accounts connected to [suspected mule account number] in the [time period]?</li>
+<li>Can you provide a visualization of the transaction network related to [suspected mule account number] during the [time period]?</li>
+<li>Can you run the Community Detection algorithm on the data for [suspected mule account number] to identify clusters in the [time period]? </li>
+<li>Can you forecast potential unusual activities for [suspected mule account number] in the upcoming [future time period] based on past data?</li>
+</ol>
+<h2 id="persona-anti-money-laundering-compliance-officer">Persona: Anti-Money Laundering Compliance Officer</h2>
+<ol>
+<li>What are the new [red flag] indicators detected by Mule Account Detection Application?</li>
+<li>Can you display the [risk rating] of this [account number] in Mule Account Detection Application?</li>
+<li>How many [accounts] have been associated with money laundering activities in the past [time period]?</li>
+<li>Which [accounts] have shown high-velocity fund transfers in the last [time period]?</li>
+<li>Can you provide a summary of [suspicious activities] reported by the Mule Account Detection Application over the last [time period]?</li>
+<li>How many [accounts] have been flagged as high-risk mule accounts in the past [time period]?</li>
+<li>Can you provide a list of the top 10 [accounts] which have received the most money from illicit activities?</li>
+<li>Can you provide a network map showing the transactions of account number [account number]?</li>
+<li>What are the common patterns detected in recent [suspicious financial transactions]?</li>
+<li>Which [financial institutions] have been involved in the largest number of mule account transactions in the last [time period]?</li>
+<li>Can you filter the flagged mule accounts based on [geographic location]? </li>
+<li>Can you provide a detailed transaction history of the flagged account number [account number]?</li>
+<li>Can you highlight the links between high-risk [accounts] and their associated [transaction network]?</li>
+<li>How has the network of mule accounts evolved over the last [time period]?</li>
+<li>Can you display the shortest transaction routes linked to mule accounts for the last [time period]?</li>
+</ol>
+<h2 id="persona-forensic-accountant">Persona: Forensic Accountant</h2>
+<ol>
+<li>What is the total amount of funds that have been transferred through [specific mule account] over [time period]?</li>
+<li>Can I get a list of all transactions involving [specific mule account] during [time period]?</li>
+<li>What was the most frequently used mule account in [geographic location] during [time period]?</li>
+<li>Could you identify the [top 5] accounts connected to [specific mule account]?</li>
+<li>How does the [specific mule account] rank in terms of centrality (PageRank) in our network?</li>
+<li>How many steps or transactions does it typically take for funds to travel from [source mule account] to [target mule account]?</li>
+<li>Who is the primary owner of [specific mule account]?</li>
+<li>Can you find any common links or patterns amongst the mule accounts detected in [geographic location] during [time period]?</li>
+<li>Can you show a graph representation of the transaction network involved with [specific mule account] over [time period]?</li>
+<li>What is the average transaction size for [specific mule account] over [time period]?</li>
+<li>Can you find connections between [specific mule account] and known illicit organizations or entities?</li>
+<li>Has there been an increase in transactions through mule accounts in [geographic location] over [time period]?</li>
+<li>What group or cluster does the [specific mule account] belong to in our network?</li>
+</ol>
+<h2 id="persona-bank-auditor">Persona: Bank Auditor</h2>
+<ol>
+<li>What is the total number of suspicious transactions in [specific time period]?</li>
+<li>Could you provide a list of flagged accounts involved in illegal activities during [specific time period]?</li>
+<li>How many high-risk mule accounts have been identified within [geographic location]?</li>
+<li>Can you trace the transaction history of [specific account number]?</li>
+<li>What are the most active mule accounts in [geographic location] during [specific time period]?</li>
+<li>Are there any common links or connections between [Account A] and [Account B]?</li>
+<li>How many transactions were detected by the Centrality algorithm as potentially fraudulent within [specific time period]?</li>
+<li>What is the level of risk associated with [specific account number] based on its past transactions?</li>
+<li>Which accounts have been identified as central nodes in the illegal funds distribution network within [geographic location]?</li>
+<li>Can you provide details about the group or cluster associated with [specific account number]?</li>
+<li>Using the Closeness analysis, can you trace back the most direct routes for money laundering involving [specific account number]?</li>
+<li>What are the hidden connections unveiled by the Deep Link Analysis connected to [specific account number]?</li>
+<li>Can you show me the graph representation of transactions between mule accounts during [specific time period]?</li>
+<li>What are the top detected anomalies in transactions during [specific time period] based on the features engineered for machine learning?</li>
+<li>How effective is the real-time monitoring in detecting suspicious activities for [specific account number]?</li>
+</ol>
+<h2 id="persona-legal-counsel-specializing-in-financial-crimes">Persona: Legal Counsel specializing in financial crimes</h2>
+<ol>
+<li>What is the current total amount of illicit funds detected by the Mule Account Detection Application in [specific time period]?</li>
+<li>How many mule accounts have been identified by the application within the [specific time period]?</li>
+<li>What are the top 5 bank accounts that the Centrality (PageRank) algorithm identified as key nodes in the [specific time-period]?</li>
+<li>Can you provide a count of how many mule accounts have been detected within [geographic location]?</li>
+<li>What are the trending patterns of illicit fund movement detected by the Deep Link Analysis over the past [specific time-period]?</li>
+<li>How effective has the application been in disrupting the flow of illicit funds in [specific time period]?</li>
+<li>What are the most common direct routes for money laundering identified by Closeness (Shortest Path) analysis in [specific time period]?</li>
+<li>How many clusters of mule accounts have been detected by Community Detection in [specific time period]?</li>
+<li>Could you provide a snapshot of the structure and operation of the identified mule account networks in [geographic location] within [specific time period]?</li>
+<li>Which financial institutions had the most identified mule accounts by the application in [specific time period]?</li>
+<li>What is the total value of assets returned to their rightful owners due to the detection and disruption of mule accounts within [specific time period]?</li>
+<li>How many accounts were involved unknowingly in money laundering activities as detected by the application in [specific time period]?</li>
+</ol>
+<h2 id="persona-risk-manager">Persona: Risk Manager</h2>
+<ol>
+<li>What is the total amount of illicit funds detected in the [time period]?</li>
+<li>How many mule accounts were identified within the [time period]?</li>
+<li>What was the average amount of money that passed through the mule accounts in the [time period]?</li>
+<li>Can you show the transaction associated with [specific mule account number]?</li>
+<li>Which geographic locations have the highest activities of mule accounts during the [time period]? </li>
+<li>How many mule accounts have been associated with [specific financial institution] in the [time period]?</li>
+<li>Please show me the transactions conducted by [specific account] in [specific time period]. Are there any anomalies detected?</li>
+<li>Which account(s) have shown sudden increase in transactions in the [time period]?</li>
+<li>What direct routes for money laundering have been identified in the [time period]?</li>
+<li>Which clusters within the transaction network were most active in [specific time period]?</li>
+<li>What are the top 5 accounts that act as central nodes in the distribution network in the [time period]?</li>
+<li>Can I get details of deep link analysis for account [specific account number]? </li>
+<li>Who are the rightful owners for the assets in account [specific mule account number]?</li>
+<li>Can you show me the most complex networks of mule accounts detected in the [time period]?</li>
+<li>How many accounts were involved knowingly and unknowingly in the mule activities during the [time period]?</li>
+</ol>
+<h2 id="persona-regulatory-compliance-officer">Persona: Regulatory Compliance Officer</h2>
+<ol>
+<li>What are the [names/IDs] of the accounts flagged as potential mule accounts in the [last week/month/year]?</li>
+<li>Can you show me a graph representation of the suspicious transactions between mule accounts in the [past week/month/year]?</li>
+<li>How does the Centrality (PageRank) algorithm determine the key accounts in potential money laundering operations?</li>
+<li>How many [bank accounts] have been found to be indirectly linked to the identified mule accounts?</li>
+<li>Can you give a detailed analysis of the mule account network structure that was discovered in the [specified period]?</li>
+<li>How many flagged transactions involved amounts exceeding [specific amount] in the [last month/year]?</li>
+<li>How can we trace back to the source of these potentially illicit funds?</li>
+<li>Can you provide the detailed transaction history of [account id/name], flagged as a mule account?</li>
+<li>What is the shortest path analysis result for the account [account id/name] suspected of money laundering?</li>
+<li>Explain the Community Detection feature in identifying groups of accounts involved in potential illicit fund flow.</li>
+<li>How many [suspicious transactions] were detected by the system in [specific geographical location] during the [specific time period]?</li>
+<li>Give me the statistical data on the assets returned to their rightful owners after detection of illicit transactions in [last month/quarter/year].</li>
+</ol>
+<h2 id="persona-law-enforcement-officer-specializing-in-financial-crimes">Persona: Law Enforcement Officer specializing in financial crimes</h2>
+<ol>
+<li>How many mule accounts have been detected in the [transaction period]?</li>
+<li>Can you provide the details of the mule accounts detected within the [geographic location]?</li>
+<li>What is the sum of funds transferred through mule accounts in the [time period]?</li>
+<li>Can you identify the central nodes in the distribution network for the [time period]?</li>
+<li>What community clusters have been uncovered in the transaction network for the [time period]?</li>
+<li>What are the most direct routes for money laundering detected in the [time period]?</li>
+<li>Can you show the hidden connections between accounts detected within the [time period]?</li>
+<li>What actions have been taken to disrupt the flow of illicit money in the [time period]?</li>
+<li>What are the top mule accounts involved in financial crimes within the [time period]?</li>
+<li>How effective have the actions taken to dismantle the complex networks of mule accounts been in the [time period]?</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../fraudster-detection/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Fraudster Detection">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Fraudster Detection
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../document-data-model/" class="md-footer__link md-footer__link--next" aria-label="Next: Document Data Model">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Document Data Model
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
+      
+    
+  </body>
+</html>
