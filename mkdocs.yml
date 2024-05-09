@@ -14,7 +14,8 @@ nav:
   - Generating Questions: questions.md
   - Solution Kit Questions:
     - Transaction Fraud: questions/transaction-fraud.md
-    - Credit Card Application Fraud: questions/credit-card-application-fruad.md
+    - Credit Card Application Fraud: questions/credit-card-application-fraud.md
+    - Connected Customer ER: questions/connected-customer-er.md
   - Glossary: glossary.md
   - Contact: contact.md
 

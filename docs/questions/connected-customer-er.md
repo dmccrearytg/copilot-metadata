@@ -1,0 +1,5 @@
+# Connected Customer
+
+## Application Description
+
+Entity Resolution is the cornerstone of our approach to addressing the challenges posed by the vast array of data in today's interconnected digital landscape. Specifically tailored to the Connected Customer use-case, our Entity Resolution solution excels at accurately identifying and linking entities across disparate datasets, focusing on Personally Identifiable Information (PII) such as email addresses, phone numbers, and physical addresses. By seamlessly integrating PII from various sources, businesses can create a unified view of each customer. This comprehensive understanding empowers organizations to personalize marketing campaigns, tailor product recommendations, and optimize customer service interactions, fostering stronger customer relationships and driving business success.

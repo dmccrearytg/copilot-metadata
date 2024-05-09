@@ -5,7 +5,7 @@
 ```
 conda create -n "copilot-metadata" python=3
 conda activate copilot-metadata
-pip install requests openai
+pip install requests openai mkdocs mkdocs-material
 
 
 You will need an OpenAI API Key
@@ -16,7 +16,7 @@ OPENAI_API_KEY=sk...
 export OPENAI_API_KEY
 ```
 
-Test:
+## Test Your Einvironment Variable
 
 ```
 echo $OPENAI_API_KEY
