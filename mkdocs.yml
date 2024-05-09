@@ -12,6 +12,9 @@ nav:
   - About: about.md
   - Generating Personas: personas.md
   - Generating Questions: questions.md
+  - Solution Kit Questions:
+    - Transaction Fraud: questions/transaction-fraud.md
+    - Credit Card Application Fraud: questions/credit-card-application-fruad.md
   - Glossary: glossary.md
   - Contact: contact.md
 
