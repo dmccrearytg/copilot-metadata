@@ -40,28 +40,33 @@ def query_openai(question, temperature=0.0):
 # Step 1: Get a list of the personals
 
 personas = [
-"Customer Service Representative",
-"Branch Bank Manager",
-"Fraud Investigator",
-"Compliance Officer",
-"Risk Analyst"]
+    'Fraud Investigator',
+    'Financial Crime Analyst',
+    'Compliance Officer',
+    'Risk Management Specialist',
+    'Forensic Accountant',
+    'Bank Manager',
+    'Internal Auditor',
+    'Law Enforcement Officer',
+    'Regulatory Agency Representative'
+]
 
 question_template = """
-We have created a Know Your Customer (KYC) application. 
-This application verifies the identity of customers and 
-assess potemtial risk of financial crime. Solution collects 
-and analyzes customer data, including personal information, 
-transaction history, and other relevant data points, 
-to ensure compliance with regulatory requirements and mitigate 
-financial risks. Graph databases models and analyzes complex 
-relationships and connections between customers, accounts, 
-transactions, and other entities. TigerGraph enables comprehensive 
-link analysis, anomaly detection, and network visualization, 
-allowing financial institutions to identify suspicious patterns 
-and behaviors more effectively. Coupled with real-time processing 
-and scalability, TigerGraph's KYC solution can analyze large volumes 
-of data efficiently and adapt to evolving regulatory requirements and fraud threats, 
-ultimately enhancing the accuracy and effectiveness of customer due diligence processes.
+We have created a new application we call the "Fraudster Detection" application.  
+The Fraudster Detection application identifies individuals or entities engaging in 
+fraudulent activities within the financial domain, such as unauthorized transactions, 
+money laundering, or identity theft.   For example, it may identify unusual spending 
+patterns, multiple accounts linked to the same individual, or transactions involving 
+high-risk entities or locations. Once potential fraudsters are identified, 
+the solution may trigger alerts for manual review by fraud investigators or 
+automatically block suspicious transactions in real-time. Graph algorithms 
+such as community detection can identify clusters of interconnected entities 
+that may represent fraud rings or syndicates. Link analysis algorithms can 
+trace connections between suspicious entities and uncover commonalities or 
+shared characteristics that may suggest collusion or coordination in fraudulent 
+activities. Centrality measures can identify influential nodes within the network, 
+such as individuals with many connections or accounts with high transaction volumes, 
+which may be key players in fraudulent schemes.
 
 For the persona {}, what are the most common questions that this role
 would ask a chatbot?

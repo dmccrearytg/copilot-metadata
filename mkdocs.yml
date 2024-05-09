@@ -17,6 +17,8 @@ nav:
     - Transaction Fraud: questions/transaction-fraud.md
     - Credit Card Application Fraud: questions/credit-card-application-fraud.md
     - Connected Customer ER: questions/connected-customer-er.md
+    - Know Your Customer: questions/know-your-customer-er.md
+    - Fraudster Detection: questions/fraudster-detection.md
   - Document Data Model: document-data-model.md
   - Glossary: glossary.md
   - Contact: contact.md
