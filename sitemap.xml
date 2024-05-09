@@ -21,12 +21,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://dmccrearytg.github.io/copilot-metadata/getting-started/</loc>
+         <lastmod>2024-05-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://dmccrearytg.github.io/copilot-metadata/glossary/</loc>
          <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dmccrearytg.github.io/copilot-metadata/personas/</loc>
+         <lastmod>2024-05-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dmccrearytg.github.io/copilot-metadata/questions/credit-care-application-fraud/</loc>
+         <lastmod>2024-05-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dmccrearytg.github.io/copilot-metadata/questions/transaction-fraud/</loc>
          <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>

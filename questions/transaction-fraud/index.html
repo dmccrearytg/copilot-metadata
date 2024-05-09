@@ -1,0 +1,913 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Resources for teaching classes on Micro Simulators using generative AI and ChatGPT.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccrearytg.github.io/copilot-metadata/questions/transaction-fraud/">
+      
+      
+        <link rel="prev" href="../../personas/">
+      
+      
+        <link rel="next" href="../../glossary/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
+    
+    
+      
+        <title>Transaction Fraud - CoPilot Metadata</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#transaction-fraud-questions-by-persona" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="CoPilot Metadata" class="md-header__button md-logo" aria-label="CoPilot Metadata" data-md-component="logo">
+      
+  <img src="../../img/tg-logo-small.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CoPilot Metadata
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Transaction Fraud
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccrearytg/copilot-metadata" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="CoPilot Metadata" class="md-nav__button md-logo" aria-label="CoPilot Metadata" data-md-component="logo">
+      
+  <img src="../../img/tg-logo-small.png" alt="logo">
+
+    </a>
+    CoPilot Metadata
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccrearytg/copilot-metadata" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../personas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generating Personas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../questions.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generating Questions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Solution Kit Questions
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Solution Kit Questions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Transaction Fraud
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Transaction Fraud
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#list-of-personas" class="md-nav__link">
+    <span class="md-ellipsis">
+      List of Personas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fraud-analyst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fraud Analyst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customer-service-representative" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customer Service Representative
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compliance-officer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compliance Officer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#risk-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk Manager
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auditor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auditor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-scientist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Scientist
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operations-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations Manager
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../credit-card-application-fruad.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Credit Card Application Fraud
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#list-of-personas" class="md-nav__link">
+    <span class="md-ellipsis">
+      List of Personas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fraud-analyst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fraud Analyst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customer-service-representative" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customer Service Representative
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compliance-officer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compliance Officer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#risk-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk Manager
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auditor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auditor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-scientist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Scientist
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operations-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations Manager
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="transaction-fraud-questions-by-persona">Transaction Fraud Questions By Persona</h1>
+<h2 id="list-of-personas">List of Personas</h2>
+<ol>
+<li>Fraud Analyst</li>
+<li>Customer Service Representative</li>
+<li>Compliance Officer</li>
+<li>Risk Manager</li>
+<li>Auditor</li>
+<li>Data Scientist</li>
+<li>Operations Manager</li>
+</ol>
+<h2 id="fraud-analyst">Fraud Analyst</h2>
+<ol>
+<li>What is the overall fraud rate for [time period]?</li>
+<li>Are there any unusual transaction patterns from [specific geographic location] in the [time period]?</li>
+<li>Can I have a list of all fraudulent transactions made by [specific cardholder]?</li>
+<li>Who are the top [number] cardholders with the highest number of suspicious transactions in [time period]?</li>
+<li>Which [merchants] have the highest amount of fraudulent transactions?</li>
+<li>How many fraudulent transactions were detected in real-time in the [time period]?</li>
+<li>What types of fraud were most common in the [time period]?</li>
+<li>What is the total amount loss due to fraud in the [time period]?</li>
+<li>What are the common characteristics of fraudulent transactions?</li>
+<li>Can you show me the fraud detection trend over the past [time period]?</li>
+<li>What is the fraud rate for [specific card type] during [time period]?</li>
+<li>Which [geographic location] has the highest number of fraudulent transactions within [time period]?</li>
+<li>Are there any recurring suspicious transactions associated with [specific cardholder]?</li>
+<li>What are the most frequent types of transactions associated with fraud events?</li>
+<li>Which days of the [time period] recorded the highest frequency of fraudulent transactions?</li>
+<li>Are there any new types of fraud that have emerged in the [time period]?</li>
+<li>What is the percentage increase or decrease in fraud cases from the previous [duration] to the current [duration]?</li>
+<li>Is there a particular [time of day/week] that has a notably high number of fraudulent activities?</li>
+<li>How many confirmed fraud transactions were identified by the system in [time period]?</li>
+<li>Can I drill down to the details of fraudulent transactions made in [specific geographic location] during [time period]?</li>
+</ol>
+<h2 id="customer-service-representative">Customer Service Representative</h2>
+<ol>
+<li>What is the current fraud risk level for the cardholder with ID [Cardholder ID]?</li>
+<li>Could you pull up the transaction details for transaction ID [Transaction ID]?</li>
+<li>Have any recent transactions been flagged for fraud for cardholder [Cardholder ID] in the last [Time Period]?</li>
+<li>Please provide a list of all the transactions made by cardholder [Cardholder ID] from [Date From] to [Date To].</li>
+<li>Could you tell me the number of transactions made at [Merchant Name] in the past [Time Period]?</li>
+<li>What is the transaction limit for the cardholder with ID [Cardholder ID]?</li>
+<li>Have there been any suspicious transactions in [Geographic Location] in the past [Time Period]?</li>
+<li>Could you show me all transactions flagged as fraudulent in the last [Time Period]?</li>
+<li>Are there any known fraudulent patterns associated with the cardholder [Cardholder ID]?</li>
+<li>Can you generate a fraud risk report for all transactions in the [Time Period]?</li>
+<li>Were there any transactions made outside the cardholder's typical [Geographic Location] in the past [Time Period]?</li>
+<li>Are there any transactions that exceed the normal spend pattern of cardholder [Cardholder ID]?</li>
+<li>What is the current status of the account linked to card [Card Number]?</li>
+<li>Were there any declined transactions for cardholder [Cardholder ID] for the last [Time Period]?</li>
+<li>Have there been any recurrent transactions from the same [Merchant Name] for cardholder [Cardholder ID] in the past [Time Period]?</li>
+<li>Pull up the list of all merchants associated with flagged transactions in the last [Time Period].</li>
+<li>Display the total number of transactions made in the past [Time Period] by cardholder [Cardholder ID]. </li>
+<li>Have there been any transactions from cardholder [Cardholder ID] that were flagged as high risk in the past [Time Period]?</li>
+<li>Could you pull up the shopping pattern of cardholder [Cardholder ID] over the past [Time Period]?</li>
+<li>Pull up the history of all flagged transactions for cardholder [Cardholder ID].</li>
+</ol>
+<h2 id="compliance-officer">Compliance Officer</h2>
+<ol>
+<li>What is the current fraud detection rate for [time period]?</li>
+<li>Are there any unusual patterns or anomalies that have been detected in [geographic location] in the last [time period]?</li>
+<li>What is the total value of potential fraudulent transactions detected in [time period]?</li>
+<li>How many fraudulent transactions have been detected from [merchant name] over the [time period]?</li>
+<li>What is the current rate of false positives in our fraud detection in the [time period]?</li>
+<li>Show me the profile of [cardholder name] including transaction history and fraud detection alerts.</li>
+<li>Can I see a summary of all recent fraudulent transactions for [geographic location] in the last [time period]?</li>
+<li>How has our fraud detection performance changed over the [time period]?</li>
+<li>How specific are our geographic location tracking in detecting fraudulent transactions?</li>
+<li>Show me the fraudulent networks identified in [geographic location] in the past [time period].</li>
+<li>How efficient is our current response time to detected fraudulent transactions?</li>
+<li>Are there any recurring indicators or patterns amongst the most recent fraudulent transactions in [geographic location]?</li>
+<li>What are the most common types of fraud detected in the [time period]?</li>
+<li>Is there a particular time or period when fraudulent activities spike in [geographic location]?</li>
+<li>What merchants are most commonly involved in fraudulent transactions in [geographic location]?</li>
+<li>What is the financial loss prevented due to our fraud detection in [time period]?</li>
+<li>Can you show me a summary of all transactions made by [cardholder name] over the [time period]?</li>
+<li>How many cardholders were affected by fraudulent transactions in [geographic location] during the [time period]?</li>
+<li>What measures or algorithms are currently being used to detect potential credit card fraud?</li>
+<li>What is our action plan when fraudulent transactions are detected?</li>
+</ol>
+<h2 id="risk-manager">Risk Manager</h2>
+<ol>
+<li>What was the total amount of fraudulent transactions detected in the last [time period]?</li>
+<li>How many fraudulent transactions have occurred in [geographic location] in the past [time period]?</li>
+<li>What is the trend of fraudulent transactions in the last [time period]?</li>
+<li>Could you identify the top [number] merchants with the highest number of fraudulent transactions in the last [time period]?</li>
+<li>Are there any recurring patterns or behaviors identified in fraudulent transactions in the recent [time period]?</li>
+<li>What are the most common types of fraud detected in [geographic location] over the last [time period]?</li>
+<li>How many cardholders have been potential victims of fraudulent transactions in the past [time period]?</li>
+<li>Can you show me the details of the most recent fraudulent transaction?</li>
+<li>What are some of the common characteristics or patterns of fraudulent transactions in [specific industry or sector]?</li>
+<li>How effective has our detection system been in identifying and preventing fraudulent transactions in the past [time period]?</li>
+<li>Are there any significant changes or spikes in fraudulent activity over the last [time period]?</li>
+<li>How many transactions are flagged as suspicious in the [time period]?</li>
+<li>Can you highlight any new emerging patterns of fraud that we have not seen before? </li>
+<li>What were our response times to fraudulent activity over the past [time period]?</li>
+<li>What percentage of fraudulent transactions were proceeded by suspicious behaviour in the last [time period]?</li>
+</ol>
+<h2 id="auditor">Auditor</h2>
+<ol>
+<li>How many suspected fraudulent transactions have been detected within the [time period]?</li>
+<li>Can you provide a list of all the transactions performed by [cardholder's name or card number] that have been flagged as potentially fraudulent?</li>
+<li>Can I view the fraud detection results for [specific transaction ID]?</li>
+<li>What is the total monetary value of the suspected fraudulent transactions in [geographic location] within the [time period]?</li>
+<li>Can you provide a geographical breakdown of where the suspected fraudulent transactions have occurred within the [time period]?</li>
+<li>What are the most common types of fraudulent transactions detected in the system within the [time period]?</li>
+<li>How many transactions have been made at [specific merchant] that have been flagged as potentially fraudulent within the [time period]?</li>
+<li>What pattern of behavior or type of transaction has led to the most number of fraud detections within the [time period]?</li>
+<li>Can you produce a report detailing the trend of fraudulent activity over the [time period]?</li>
+<li>What is the highest value fraudulent transaction that has been detected on [specific date]?</li>
+<li>How effective has our system been in detecting and preventing fraudulent transactions during [time period]?</li>
+<li>Which cardholder has had the most transactions flagged as suspicious within the [time period]?</li>
+<li>Can we analyze the timing pattern of transactions linked to a specific [card number] to identify fraud?</li>
+<li>What fraud patterns are most common among transactions made in [specific geographic location]?</li>
+<li>Can you provide a list of cardholders who have had more than [specific number] transactions flagged as fraudulent?</li>
+</ol>
+<h2 id="data-scientist">Data Scientist</h2>
+<ol>
+<li>What were the total number of fraud cases detected in the [time period]?</li>
+<li>Can I get a list of all the fraudulent transactions that occurred in [geographic location] during the [time period]?</li>
+<li>Who are the top [number] cardholders with the most number of fraudulent transactions in the past [time period]?</li>
+<li>What is the pattern of fraudulent activities that occurred between [specific time period]?</li>
+<li>Can you provide a summary of the most common anomalies detected in credit card transactions?</li>
+<li>What is the most common fraudulent network detected in [geographic location]?</li>
+<li>Can I get an overview of the fraud detection accuracy rate for the last [time period]?</li>
+<li>How many fraudulent cases were detected using TigerGraph's graph algorithms for the [time period]?</li>
+<li>Which merchants have been most involved in fraudulent transactions over [time period]?</li>
+<li>How does the pattern of fraudulent activities in [current year] compare to the previous [number of years]?</li>
+<li>I would like to know the trend of fraudulent activities on a [daily/weekly/monthly] basis.</li>
+<li>What merchant categories have the highest frequency of detected fraudulent transactions in [geographic location] over [time period]?</li>
+<li>What are the peak hours for fraudulent transactions in [geographic location]?</li>
+<li>Can you generate a report showcasing the effectiveness of our existing fraud detection measures over the [time period]?</li>
+<li>How many unauthorised transactions were detected in real-time in the last [weeks/months/years]?.</li>
+<li>Which credit cards were used the most in fraudulent transactions over the past [time period]?</li>
+<li>Are there any identified suspicious networks operating in [geographic location]?</li>
+<li>What is the typical demographic profile of a cardholder involved in fraudulent activities found in our data?</li>
+<li>How much financial loss was prevented by detecting fraud activities in the last [time period]?</li>
+<li>What fraud trends have that we seen in [geographic location] in the past [time period]?</li>
+</ol>
+<h2 id="operations-manager">Operations Manager</h2>
+<ol>
+<li>What is the total number of fraudulent transactions detected in the [time period]?</li>
+<li>How much money [in USD] was involved in fraudulent transactions in the [time period]?</li>
+<li>Can you provide details of all transactions flagged as fraudulent on [specific date]?</li>
+<li>What is the most common type of fraud detected in the [time period]?</li>
+<li>Which [geographic location] has the highest number of fraudulent transactions in the [time period]?</li>
+<li>How many repeat offenders were identified in the [time period]?</li>
+<li>Can you provide a breakdown of fraudulent transactions by [type of fraud] in the [time period]?</li>
+<li>Have there been any unusual uptick in fraudulent transactions in the [time period]?</li>
+<li>What were the top 5 merchants associated with fraudulent transactions in the [time period]?</li>
+<li>What percentage of total transactions were flagged as fraudulent in the [time period]?</li>
+<li>Can you list the most significant fraudulent transaction [amount in USD] in the [time period]?</li>
+<li>What is the trend of fraudulent transactions over the [time period]?</li>
+<li>How many new fraudulent cardholders have been identified in the [time period]?</li>
+<li>Which cardholder had the maximum number of fraudulent transactions in the [time period]?</li>
+<li>Can you provide a report of all cardholders who had fraudulent transactions above [amount in USD] in the [time period]?</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../personas/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Generating Personas">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Generating Personas
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../glossary/" class="md-footer__link md-footer__link--next" aria-label="Next: Glossary">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Glossary
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
+      
+    
+  </body>
+</html>
