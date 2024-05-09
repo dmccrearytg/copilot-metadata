@@ -22,7 +22,7 @@
     
     
       
-        <title>Know Your Customer ER - CoPilot Metadata</title>
+        <title>Know Your Customer Entity Resolution - CoPilot Metadata</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#know-your-customer-er" class="md-skip">
+        <a href="#know-your-customer-entity-resolution" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Know Your Customer ER
+              Know Your Customer Entity Resolution
             
           </span>
         </div>
@@ -255,6 +255,26 @@
   
   
     <li class="md-nav__item">
+      <a href="../../getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../personas/" class="md-nav__link">
         
   
@@ -342,11 +362,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../document-model.md" class="md-nav__link">
+      <a href="../../document-data-model/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Document Model
+    Document Data Model
   </span>
   
 
@@ -430,6 +450,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sample-prompt-to-get-personas-for-kyc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Prompt To Get Personas for KYC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -448,9 +486,155 @@
   
 
 
-<h1 id="know-your-customer-er">Know Your Customer ER</h1>
+<h1 id="know-your-customer-entity-resolution">Know Your Customer Entity Resolution</h1>
 <h2 id="description">Description</h2>
 <p>The "Know Your Customer" application (KYC) verifies the identity of customers and assesses the potential risk of financial crime.  The Solution Kit collects and analyzes customer data, including personal information, transaction history, and other relevant data points, to ensure compliance with regulatory requirements and mitigate financial risks. The TigerGraph database models and analyzes complex relationships and connections between customers, accounts, transactions, and other entities. TigerGraph enables comprehensive link analysis, anomaly detection, and network visualization, allowing financial institutions to identify suspicious patterns and behaviors more effectively. Coupled with real-time processing and scalability, TigerGraph's KYC solution can analyze large volumes of data efficiently and adapt to evolving regulatory requirements and fraud threats, ultimately enhancing the accuracy and effectiveness of customer due diligence processes.</p>
+<h2 id="sample-prompt-to-get-personas-for-kyc">Sample Prompt To Get Personas for KYC</h2>
+<div class="highlight"><pre><span></span><code>We have created a Know Your Customer (KYC) application. 
+This application verifies the identity of customers and 
+assess potemtial risk of financial crime. Solution collects 
+and analyzes customer data, including personal information, 
+transaction history, and other relevant data points, 
+to ensure compliance with regulatory requirements and mitigate 
+financial risks. Graph databases models and analyzes complex 
+relationships and connections between customers, accounts, 
+transactions, and other entities. TigerGraph enables comprehensive 
+link analysis, anomaly detection, and network visualization, 
+allowing financial institutions to identify suspicious patterns 
+and behaviors more effectively. Coupled with real-time processing 
+and scalability, TigerGraph&#39;s KYC solution can analyze large volumes 
+of data efficiently and adapt to evolving regulatory requirements and fraud threats, 
+ultimately enhancing the accuracy and effectiveness of customer due diligence processes.
+
+For this application, create a list of the top personas that would use this application. 
+Do not list any personas that deal with application performance or security.
+Focus only on personas that would use a chatbot to ask questions about the data within the application.
+Return the list as a Python list data structure.
+Order the list based on the most frequent users of the
+application to the least frequent users of the application.
+</code></pre></div>
+<h2 id="response">Response</h2>
+<p>Note that these results are sorted from the most frequent users of the application to the least frequent users of the application.</p>
+<ol>
+<li>
+<p><strong>Customer Service Representative</strong>: A Customer Service Representative would use the chatbot to help answer customer queries or to guide customers through the data within the application.</p>
+</li>
+<li>
+<p><strong>Branch Bank Manager</strong>: A Branch Bank Manager would use the KYC application to oversee the financial activities of the bank. They could use the application to ensure compliance with banking laws and regulations and to assess the risk portfolios of their customers.</p>
+</li>
+<li>
+<p><strong>Fraud Investigator</strong>: A Fraud Investigator would use the application to detect any suspicious patterns or behaviors among customers' data, enabling them to take necessary actions to mitigate financial risk.</p>
+</li>
+<li>
+<p><strong>Financial Analyst</strong>: A Financial Analyst conducts detailed financial analyses, reviewing economic performance of companies, and making investment recommendations. They would use this application to study the transaction history and other relevant data points of various customers.</p>
+</li>
+<li>
+<p><strong>Compliance Officer</strong>: A Compliance Officer is responsible for ensuring a company is being run legally and ethically, maintaining its compliance with various regulatory requirements. They would use the KYC application to verify the identity of customers and assess potential risks of financial crime.</p>
+</li>
+</ol>
+<p>Copy this code into the question generator Python program:</p>
+<p><code>py
+personas = [
+'Customer Service Representative'
+'Branch Bank Manager',
+'Fraud Investigator',
+'Compliance Officer',
+ 'Risk Analyst']</code></p>
+<p>Persona: Customer Service Representative </p>
+<ol>
+<li>What is the current KYC status of [customer name or customer ID]?</li>
+<li>Are there any pending KYC documents for [customer name or customer ID]?</li>
+<li>Can you show me the transaction history of [customer name or customer ID] for [specific time period]?</li>
+<li>Were there any identified suspicious activities for [customer name or customer ID] in the last [specific time period]?</li>
+<li>Can the system identify any potential financial risks linked to [customer name or customer ID]?</li>
+<li>Can I see a visual representation of the network connections for [customer name or customer ID]?</li>
+<li>Can you provide me with the personal information of [customer name or customer ID] for compliance checks?</li>
+<li>Are there any regulatory requirements that haven’t been met by [customer name or customer ID]?</li>
+<li>Has [customer name or customer ID] been involved in any recent transactions with [another customer name or customer ID]?</li>
+<li>Does [customer name or customer ID] have any connections with [other entity name or ID]?</li>
+<li>Are there any anomalies or unusual patterns in the transactions of [customer name or customer ID]?</li>
+<li>Is there an update required in the KYC of [customer name or customer ID] to adapt to new regulatory requirements?</li>
+<li>What are the recent transactions of [customer name or customer ID] in the last [specific time period]?</li>
+<li>Can you show the transaction history of [customer name or customer ID] between [date1] and [date2]?</li>
+<li>Are there any red flags in the KYC details of [customer name or customer ID]?</li>
+</ol>
+<p>Persona: Branch Bank Manager </p>
+<ol>
+<li>What is the current progress of [customer name]'s KYC verification?</li>
+<li>Can you tell me the risk assessment result for [customer name]?</li>
+<li>What types of anomalies were detected in the transaction history of [customer name]?</li>
+<li>Could you provide a brief summary of the recent transactions of [customer name]?</li>
+<li>Are there any customers who are non-compliant with regulatory requirements?</li>
+<li>How many customers are yet to complete their KYC verification?</li>
+<li>What is the total number of customers who have completed their KYC verification [this week/month/year]?</li>
+<li>Can you identify any suspicious patterns in the transactions of [customer name]?</li>
+<li>How does TigerGraph help improve the effectiveness of customer due diligence processes?</li>
+<li>Are there any high-risk customers identified in the [geographic location] branch?</li>
+<li>How many unverified customers do we have in the [geographic location] branch?</li>
+<li>Is there any unusual transaction activity recorded in the recent [time period]? </li>
+<li>Can we conduct a comprehensive link analysis for [customer name]?</li>
+<li>Could you show me a network visualization for our customers in the [geographic location] branch?</li>
+<li>How can we further improve our adaptability towards evolving regulatory requirements and fraud threats?</li>
+</ol>
+<p>Persona: Fraud Investigator </p>
+<ol>
+<li>What is the latest transaction history for [customer name]?</li>
+<li>How many suspicious transactions have been detected in the last [time period]?</li>
+<li>Can you show a link analysis for [customer name]?</li>
+<li>What is the recent account activity level for [customer name]?</li>
+<li>Are there any anomalies detected in the transactions of [customer name]?</li>
+<li>Can you highlight the suspicious patterns associated with the account of [customer name]?</li>
+<li>Show me the transaction history of [customer name] from [specific time period].</li>
+<li>Provide me the detailed customer data for [customer name].</li>
+<li>Has the KYC process identified any risks associated with [customer name]?</li>
+<li>Have there been any transactions in [geographic location] for [customer name] in the past [time period]?</li>
+<li>What is the overall risk level associated with the [customer name]?</li>
+<li>Can you show the network visualization between [Customer A] and [Customer B]?</li>
+<li>What are the latest regulatory requirements and fraud threats updates?</li>
+<li>Have there been any jurisdiction issues for the transactions of [customer name] in [geographic location]?</li>
+<li>Can you provide a comprehensive report on all the transactions made by [customer name] within the [time period]?</li>
+</ol>
+<p>Persona: Compliance Officer </p>
+<ol>
+<li>What is the current financial risk of [Customer Name]?</li>
+<li>Could you provide the transaction history for [Customer Name] during [Time Period]?</li>
+<li>Are there any anomalies detected in transactions of [Customer Name]?</li>
+<li>Can you show the details of [Transaction ID]?</li>
+<li>What is the network visualization of transactions for [Customer Name]?</li>
+<li>In [time period], how many suspicious activities were detected?</li>
+<li>Are there any connections between [Customer Name] and the recent fraudulent activities?</li>
+<li>Has [Customer Name] met all the compliance requirements for the [compliance check]?</li>
+<li>Are all the documents updated for [Customer Name] in our KYC records?</li>
+<li>What is the status of the KYC verification process for [Customer Name]?</li>
+<li>Is there any recent change in the regulatory requirements that I should be aware of?</li>
+<li>Can you provide a summary of all suspicious activities in [time period]?</li>
+<li>How many new customers have been added in the [time period]?</li>
+<li>What is the status of tax compliance for [Customer Name]?</li>
+<li>How many customers are on the financial risk warning list currently?</li>
+<li>Has the [Transaction ID] by [Customer Name] complied with all internal regulations and financial standards?</li>
+<li>Can you generate a risk profile for [Customer Name] based on their most recent activities?</li>
+<li>How is the overall compliance score calculated for [Customer Name]?</li>
+<li>Are there any politically exposed persons (PEPs) connected to [Customer Name]?</li>
+<li>Who are the top 5 customers with the highest number of flagged transactions in [time period]?</li>
+</ol>
+<p>Persona: Risk Analyst </p>
+<ol>
+<li>What is the total number of high-risk customers in [specific time period]?</li>
+<li>Can you show me the transaction history of customer [customer ID / name]?</li>
+<li>How many suspicious transactions have we identified in [specific geographical location] within [specific time period]?</li>
+<li>What is the detailed personal information linked to account ID [account ID]?</li>
+<li>Can you list all the transactions for [customer ID / name] that occurred in [specific time period]?</li>
+<li>Are there any anomalies detected in customer [customer ID / name] data?</li>
+<li>Can you show the network visualization for customer [customer ID / name]?</li>
+<li>Please detail the complex relationships and connections associated with [customer ID / name].</li>
+<li>How have our customer due diligence processes improved over [specific time period]?</li>
+<li>What are the new regulatory requirements implemented in [specific time period]?</li>
+<li>How many high-risk customers are from [specific geographical location]?</li>
+<li>Show me the account details and transaction history for accounts flagged in [specific time period].</li>
+<li>Can you provide the statistical report of suspicious activities for [specific time period]?</li>
+<li>Are there any customers having unusual increase in transactions during [specific time period]?</li>
+<li>Can we identify any clear patterns in fraudulent activities in [specific geographical location] during [specific time period]?</li>
+</ol>
 
 
 
