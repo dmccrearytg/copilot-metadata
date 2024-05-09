@@ -20,6 +20,7 @@ nav:
     - Connected Customer ER: questions/connected-customer-er.md
     - Know Your Customer: questions/know-your-customer-er.md
     - Fraudster Detection: questions/fraudster-detection.md
+    - Mule Account Detection: questions/mule-account-detection.md
   - Document Data Model: document-data-model.md
   - Glossary: glossary.md
   - Contact: contact.md

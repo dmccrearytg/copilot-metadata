@@ -40,33 +40,19 @@ def query_openai(question, temperature=0.0):
 # Step 1: Get a list of the personals
 
 personas = [
-    'Fraud Investigator',
-    'Financial Crime Analyst',
-    'Compliance Officer',
-    'Risk Management Specialist',
-    'Forensic Accountant',
-    'Bank Manager',
-    'Internal Auditor',
-    'Law Enforcement Officer',
-    'Regulatory Agency Representative'
+    "Financial Fraud Investigator", 
+    "Anti-Money Laundering Compliance Officer", 
+    "Forensic Accountant", 
+    "Bank Auditor", 
+    "Legal Counsel specializing in financial crimes", 
+    "Risk Manager", 
+    "Regulatory Compliance Officer", 
+    "Law Enforcement Officer specializing in financial crimes"
 ]
 
 question_template = """
-We have created a new application we call the "Fraudster Detection" application.  
-The Fraudster Detection application identifies individuals or entities engaging in 
-fraudulent activities within the financial domain, such as unauthorized transactions, 
-money laundering, or identity theft.   For example, it may identify unusual spending 
-patterns, multiple accounts linked to the same individual, or transactions involving 
-high-risk entities or locations. Once potential fraudsters are identified, 
-the solution may trigger alerts for manual review by fraud investigators or 
-automatically block suspicious transactions in real-time. Graph algorithms 
-such as community detection can identify clusters of interconnected entities 
-that may represent fraud rings or syndicates. Link analysis algorithms can 
-trace connections between suspicious entities and uncover commonalities or 
-shared characteristics that may suggest collusion or coordination in fraudulent 
-activities. Centrality measures can identify influential nodes within the network, 
-such as individuals with many connections or accounts with high transaction volumes, 
-which may be key players in fraudulent schemes.
+We have created a new application we call Mule account detection Application.  
+Within financial crime is a critical endeavor aimed at identifying bank accounts that are used to receive and disperse money from illicit activities. These mule accounts, which may be involved either knowingly or unknowingly in these operations, present a significant challenge for financial institutions. The rapid movement of funds through an extensive and seemingly unconnected network of accounts, spread across numerous financial institutions, complicates the tracking and halting of such illicit transactions. Financial institutions are therefore tasked with detecting this activity promptly to prevent further fund transfers and ensure the return of assets to their rightful owners. TigerGraph's solutions address this challenge through a suite of sophisticated graph algorithms that enable real-time monitoring, feature engineering for machine learning, and anomaly detection to trace illegal funds effectively. Community Detection is employed to unveil clusters within the transaction network, highlighting groups of accounts that work in concert to move illicit funds. The Centrality (PageRank) algorithm identifies key accounts that act as central nodes in the distribution network, crucial for disrupting the flow of illicit money. Closeness (Shortest Path) analysis reveals the most direct routes for money laundering, aiding in the trace back to the source. Lastly, Deep Link Analysis uncovers hidden connections between accounts, providing a comprehensive understanding of the network's structure and operation. Together, these algorithms form the backbone of TigerGraph's approach to dismantling the complex networks of mule accounts, safeguarding the financial system against the movement of illicit funds.
 
 For the persona {}, what are the most common questions that this role
 would ask a chatbot?
