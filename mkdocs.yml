@@ -14,6 +14,7 @@ nav:
   - Generating Personas: personas.md
   - Generating Questions: questions.md
   - Solution Kit Questions:
+    - Introduction: questions/index.md
     - Transaction Fraud: questions/transaction-fraud.md
     - Credit Card Application Fraud: questions/credit-card-application-fraud.md
     - Connected Customer ER: questions/connected-customer-er.md
