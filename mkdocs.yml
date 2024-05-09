@@ -11,8 +11,8 @@ nav:
   - Home: index.md
   - About: about.md
   - Getting Started: getting-started.md
-  - Generating Personas: personas.md
-  - Generating Questions: questions.md
+  - Generating Personas: generating-personas.md
+  - Generating Questions: generating-questions.md
   - Solution Kit Questions:
     - Introduction: questions/index.md
     - Transaction Fraud: questions/transaction-fraud.md
