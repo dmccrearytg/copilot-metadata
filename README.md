@@ -1,8 +1,5 @@
-# Customer 360 CoPilot Demo
+# CoPilot Metadata
 
-Resources for teaching classes on Micro Simulators using generative AI and ChatGPT.
-A test repository to test the checkin process
+Resources for CoPilot Metadata
 
-Public mkdocs:
-
-[https://dmccrearytg.github.io/c360/](https://dmccrearytg.github.io/c360/)
+[https://dmccrearytg.github.io/copilot-metadata/](https://dmccrearytg.github.io/copilot-metadata/)
