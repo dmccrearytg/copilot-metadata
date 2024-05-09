@@ -4,7 +4,7 @@
 import requests
 import os  # Required to access environment variables
 
-def query_openai(question):
+def query_openai(question, temperature=0.0):
     # Retrieve your OpenAI API key from an environment variable
     api_key = os.getenv('OPENAI_API_KEY')
     

@@ -2,7 +2,15 @@
 
 ## Prompt
 
-## Response
+```linenums="0"
+We have created a credit card application fraud application.  Credit card application fraud occurs when someone applies for a credit card using stolen or falsified information, with the intention of using it for unauthorized transactions or financial gain. Perpetrators often use stolen identities or create fake identities to apply for credit cards. They may exploit vulnerabilities in the application process, such as weak identity verification measures, to succeed in their fraudulent activities. This type of fraud can result in financial losses for both individuals and financial institutions, as well as damage to victims' credit scores and reputations. To combat this, many credit card companies employ various security measures, including identity verification checks and fraud detection algorithms.
+
+For this application, create a list of the top personas that would use this application. 
+Do not list any personas that deal with application performance or security.
+Focus only on personas that would use a chatbot to ask questions about the data within the application.
+```
+
+## Sample Response
 
 1. Fraud Analyst: This professional is responsible for analyzing transactions to detect any fraudulent activities. They would use the application to track, monitor, and analyze data related to financial transactions and detect patterns indicative of fraudulent behavior.
 
@@ -19,3 +27,6 @@
 7. Financial Institutions/Banks: These entities would use the application to monitor the transactions of their clients and preemptively identify any suspicious or fraudulent activities.
 
 8. End User/Customer: While they may not directly interact with the application, they are a key persona as they are the subject of the transactions being monitored for potential fraud. A significant aspect of a financial fraud transaction application's function is focused on maintaining the financial security of these individuals.
+
+## Prompt to Python List
+

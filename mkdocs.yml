@@ -10,13 +10,14 @@ edit_uri: edit/master/docs/
 nav:
   - Home: index.md
   - About: about.md
+  - Getting Started: getting-started.md
   - Generating Personas: personas.md
   - Generating Questions: questions.md
   - Solution Kit Questions:
     - Transaction Fraud: questions/transaction-fraud.md
     - Credit Card Application Fraud: questions/credit-card-application-fraud.md
     - Connected Customer ER: questions/connected-customer-er.md
-  - Document Model: document-model.md
+  - Document Data Model: document-data-model.md
   - Glossary: glossary.md
   - Contact: contact.md
 
