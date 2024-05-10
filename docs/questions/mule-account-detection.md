@@ -6,10 +6,13 @@ Mule account detection in financial crime is a critical endeavor aimed at identi
 
 ## Prompt
 
+```linenums="0"
+```
+
 ## Personas
 
 ```python 
-[
+personas = [
     "Financial Fraud Investigator", 
     "Anti-Money Laundering Compliance Officer", 
     "Forensic Accountant", 
