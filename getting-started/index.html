@@ -313,6 +313,42 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#test-your-environment-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Your Environment Variable
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-personas-from-the-application-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate Personas from the Application Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-questions-for-each-persona" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate Questions for Each Persona
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#todo" class="md-nav__link">
+    <span class="md-ellipsis">
+      TODO
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -513,6 +549,42 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#test-your-environment-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Your Environment Variable
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-personas-from-the-application-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate Personas from the Application Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-questions-for-each-persona" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate Questions for Each Persona
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#todo" class="md-nav__link">
+    <span class="md-ellipsis">
+      TODO
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -532,36 +604,53 @@
 
 
 <h1 id="getting-started">Getting Started</h1>
+<p>There are several steps.</p>
+<ol>
+<li>Get your Python virtual environment setup and add the necessary Python libraries.  We use Conda in this example.</li>
+<li>Get your OpenAI API Key and put it in your .zshrc file so it is setup when you start a shell</li>
+<li>Test your API Key</li>
+<li>For a new application, generate the personas</li>
+<li>For each Persona, generate the questions</li>
+</ol>
 <h2 id="conda-setup">Conda Setup</h2>
-<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>conda create -n &quot;copilot-metadata&quot; python=3
-conda activate copilot-metadata
-pip install requests openai mkdocs mkdocs-material
-
-
-You will need an OpenAI API Key
-
-Store the key in your ~/.zshrc file
-</code></pre></div></td></tr></table></div>
-OPENAI_API_KEY=sk...
-export OPENAI_API_KEY
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>## Test Your Einvironment Variable
-</code></pre></div></td></tr></table></div>
-echo $OPENAI_API_KEY
+<p>We recommend you setup a named virtual environment with Conda or a Python VENV.</p>
+<p>Here are the steps with Conda</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Run the following program
-
-```sh
-python src/01-openai-test.py
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span><span class="s2">&quot;copilot-metadata&quot;</span><span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>
+conda<span class="w"> </span>activate<span class="w"> </span>copilot-metadata
+pip<span class="w"> </span>install<span class="w"> </span>requests<span class="w"> </span>openai<span class="w"> </span>mkdocs<span class="w"> </span>mkdocs-material
+</code></pre></div></td></tr></table></div>
+<p>You will need an OpenAI API Key</p>
+<p>Store the key in your ~/.zshrc file
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nv">OPENAI_API_KEY</span><span class="o">=</span>sk...
+<span class="nb">export</span><span class="w"> </span>OPENAI_API_KEY
 </code></pre></div></td></tr></table></div></p>
+<h2 id="test-your-environment-variable">Test Your Environment Variable</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>echo $OPENAI_API_KEY
+</code></pre></div></td></tr></table></div>
+<p>Run the following program Python program in the src directory that tests your OpenAI API Key works.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>python<span class="w"> </span>src/01-openai-test.py
+</code></pre></div></td></tr></table></div>
+<h2 id="generate-personas-from-the-application-description">Generate Personas from the Application Description</h2>
+<p>Edit the <code>src/05-get-personas-from-app-desc.py</code> Python program to add a description.  Use the following Python program:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>python<span class="w"> </span><span class="m">05</span>-get-personas-from-app-desc.py
+</code></pre></div></td></tr></table></div>
+<p>That will generate a list of personas. You will use this list for the next section.
+Make sure you review the list and remove any personas that are not appropriate
+such as security and performance roles.</p>
+<h2 id="generate-questions-for-each-persona">Generate Questions for Each Persona</h2>
+<p>Take the description and list of personas and copy them into
+the appropriate areas of the <code>06-get-questions-for-personas.py</code> program.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>python<span class="w"> </span><span class="m">06</span>-get-questions-for-personas.py
+</code></pre></div></td></tr></table></div>
+<h2 id="todo">TODO</h2>
+<ol>
+<li>Add a feature to take the application description as an input parameter in a file or
+the section within a markdown documents after the ## Application Description section header.</li>
+<li>Take the output of the first Python program and use it as the input to the second.</li>
+</ol>
 
 
 
