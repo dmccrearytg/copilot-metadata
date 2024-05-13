@@ -41,9 +41,9 @@ def query_openai(question, temperature=0.0):
 
 question = """
 
-We have created a new product call Merchant Product Recommendations.
+We have created a new product called Anti-Money Laundering.
 
-Merchant Product Recommendations enhances the checkout experience by enabling financial payment providers with ability to suggest highly relevant products to customers at the point of sale. By analyzing the complex relationships between products, customers, and merchants, businesses can identify patterns and correlations that drive sales and revenue. With TigerGraph's graph database, businesses can analyze vast amounts of transactional data in real-time to uncover hidden patterns and correlations, provide personalized product recommendations that increase average order value and customer satisfaction, and optimize inventory and reduce waste by identifying slow-moving products optimizing product offerings.  Merchant Product Recommendations can help TigerGraph customers unlock new revenue streams, improve customer satisfaction, and establish a competitive edge in the e-commerce landscape.
+Anti-Money Laundering empowers financial institutions to detect and prevent financial crimes by modeling complex relationships between transactions, accounts, and entities as a graph.  Anti-Money Laundering enables financial institutions to monitor and detect suspicious transactions in real time, automate identification of high-risk customers and their activities, and track transaction flows with enhanced due diligence and Know-Your-Customer (KYC) compliance.  Anti-Money Laundering helps TigerGraph customers stay ahead of the curve in the fight against financial crime reducing risk of reputational damage and maintaining trust with their customers.
 
 For this application, create a list of the top personas that would use this application. 
 Do not list any personas that deal with application performance or security.
