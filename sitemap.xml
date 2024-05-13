@@ -21,6 +21,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://dmccrearytg.github.io/copilot-metadata/generating-personas/</loc>
+         <lastmod>2024-05-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://dmccrearytg.github.io/copilot-metadata/generating-questions/</loc>
          <lastmod>2024-05-13</lastmod>
          <changefreq>daily</changefreq>
@@ -32,11 +37,6 @@
     </url>
     <url>
          <loc>https://dmccrearytg.github.io/copilot-metadata/glossary/</loc>
-         <lastmod>2024-05-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://dmccrearytg.github.io/copilot-metadata/personas/</loc>
          <lastmod>2024-05-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
