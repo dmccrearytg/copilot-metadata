@@ -71,6 +71,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://dmccrearytg.github.io/copilot-metadata/questions/inventory-management/</loc>
+         <lastmod>2024-05-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://dmccrearytg.github.io/copilot-metadata/questions/investment-product-recommendations/</loc>
          <lastmod>2024-05-13</lastmod>
          <changefreq>daily</changefreq>
@@ -87,6 +92,11 @@
     </url>
     <url>
          <loc>https://dmccrearytg.github.io/copilot-metadata/questions/mule-account-detection/</loc>
+         <lastmod>2024-05-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dmccrearytg.github.io/copilot-metadata/questions/network-digital-twin-knolwedge-graph/</loc>
          <lastmod>2024-05-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
