@@ -40,29 +40,13 @@ def query_openai(question, temperature=0.0):
 # Example usage
 
 question = """
-Mule account detection in financial crime is a critical endeavor aimed at 
-identifying bank accounts that are used to receive and disperse money from 
-illicit activities. These mule accounts, which may be involved either knowingly 
-or unknowingly in these operations, present a significant challenge for 
-financial institutions. The rapid movement of funds through an extensive and 
-seemingly unconnected network of accounts, spread across numerous financial 
-institutions, complicates the tracking and halting of such illicit transactions. 
-Financial institutions are therefore tasked with detecting this activity 
-promptly to prevent further fund transfers and ensure the return of assets 
-to their rightful owners. TigerGraph's solutions address this challenge 
-through a suite of sophisticated graph algorithms that enable real-time 
-monitoring, feature engineering for machine learning, and anomaly detection 
-to trace illegal funds effectively. Community Detection is employed to unveil
- clusters within the transaction network, highlighting groups of accounts 
- that work in concert to move illicit funds. The Centrality (PageRank) 
- algorithm identifies key accounts that act as central nodes in the distribution network, 
- crucial for disrupting the flow of illicit money. Closeness (Shortest Path) analysis 
- reveals the most direct routes for money laundering, aiding in the trace back to the 
- source. Lastly, Deep Link Analysis uncovers hidden connections between accounts, 
- providing a comprehensive understanding of the network's structure and operation. 
- Together, these algorithms form the backbone of TigerGraph's approach to dismantling 
-the complex networks of mule accounts, safeguarding the financial system 
-against the movement of illicit funds.
+Customer 360 allows financial institutions to gain a comprehensive view of each 
+customer's interactions, preferences, and needs across all touchpoints. 
+Tigergraph can connect data silos across an institution such as banking transactions, 
+online interactions, customer service inquiries, and social media engagements. 
+The Customer 360 platform provides valuable insights for targeted product offerings. 
+Additionally, it fosters stronger customer relationships, improves retention rates, 
+and ultimately drives profitability through increased customer satisfaction and loyalty.
 
 For this application, create a list of the top personas that would use this application. 
 Do not list any personas that deal with application performance or security.

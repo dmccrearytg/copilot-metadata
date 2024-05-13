@@ -1,16 +1,19 @@
 # Getting Started
 
+This Getting Started guide targets software developers who would like to generate
+persona-based questions for an application.
+
 There are several steps.
 
-1. Get your Python virtual environment setup and add the necessary Python libraries.  We use Conda in this example.
-2. Get your OpenAI API Key and put it in your .zshrc file so it is setup when you start a shell
+1. Get your Python virtual environment set up and add the necessary Python libraries.  We use Conda in this example.
+2. Get your OpenAI API Key and put it in your .zshrc file so it is set up when you start a shell
 3. Test your API Key
 4. For a new application, generate the personas
 5. For each Persona, generate the questions
 
 ## Conda Setup
 
-We recommend you setup a named virtual environment with Conda or a Python VENV.
+We recommend you set up a named virtual environment with Conda or a Python VENV.
 
 Here are the steps with Conda
 
