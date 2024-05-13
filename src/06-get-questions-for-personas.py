@@ -40,26 +40,21 @@ def query_openai(question, temperature=0.0):
 # Step 1: Get a list of the personals
 
 personas = [
-    'Customer Service Representative',
-    'Banking Consultant',
-    'Marketing Analyst',
+    'E-Commerce Business Owner',
+    'Marketing Manager',
     'Sales Manager',
-    'Customer Relationship Manager',
-    'Social Media Manager',
+    'Customer Service Representative',
     'Product Manager',
-    'Data Analyst',
-    'Retails Banker'
+    'E-Commerce Strategist',
+    'Supply Inventory Manager',
+    'Business Analyst'
 ]
 
 question_template = """
-We have created a new application we call Financial Customer 360.
-Financial Customer 360 allows financial institutions to gain a comprehensive view of each 
-customer's interactions, preferences, and needs across all touchpoints. 
-Tigergraph can connect data silos across an institution such as banking transactions, 
-online interactions, customer service inquiries, and social media engagements. 
-The Customer 360 platform provides valuable insights for targeted product offerings. 
-Additionally, it fosters stronger customer relationships, improves retention rates, 
-and ultimately drives profitability through increased customer satisfaction and loyalty.
+We have created a new application we call Merchant Product Recommendations.
+
+Merchant Product Recommendations enhances the checkout experience by enabling financial payment providers with ability to suggest highly relevant products to customers at the point of sale. By analyzing the complex relationships between products, customers, and merchants, businesses can identify patterns and correlations that drive sales and revenue. With TigerGraph's graph database, businesses can analyze vast amounts of transactional data in real-time to uncover hidden patterns and correlations, provide personalized product recommendations that increase average order value and customer satisfaction, and optimize inventory and reduce waste by identifying slow-moving products optimizing product offerings.  Merchant Product Recommendations can help TigerGraph customers unlock new revenue streams, improve customer satisfaction, and establish a competitive edge in the e-commerce landscape.
+
 
 For the persona {}, what are the most common questions that this role
 would ask a chatbot?
@@ -72,8 +67,7 @@ Return the results in Markdown numbered list format.
 for persona in personas:
     question = question_template.format(persona)
     response = query_openai(question)
-    print("\n\n")
-    print("## Persona:", persona, "\n")
+    print("\n### Persona:", persona, "\n")
     print(response)
 
 print("\nDone\n")

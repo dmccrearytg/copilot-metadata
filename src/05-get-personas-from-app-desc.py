@@ -40,19 +40,16 @@ def query_openai(question, temperature=0.0):
 # Example usage
 
 question = """
-Customer 360 allows financial institutions to gain a comprehensive view of each 
-customer's interactions, preferences, and needs across all touchpoints. 
-Tigergraph can connect data silos across an institution such as banking transactions, 
-online interactions, customer service inquiries, and social media engagements. 
-The Customer 360 platform provides valuable insights for targeted product offerings. 
-Additionally, it fosters stronger customer relationships, improves retention rates, 
-and ultimately drives profitability through increased customer satisfaction and loyalty.
+
+We have created a new product call Merchant Product Recommendations.
+
+Merchant Product Recommendations enhances the checkout experience by enabling financial payment providers with ability to suggest highly relevant products to customers at the point of sale. By analyzing the complex relationships between products, customers, and merchants, businesses can identify patterns and correlations that drive sales and revenue. With TigerGraph's graph database, businesses can analyze vast amounts of transactional data in real-time to uncover hidden patterns and correlations, provide personalized product recommendations that increase average order value and customer satisfaction, and optimize inventory and reduce waste by identifying slow-moving products optimizing product offerings.  Merchant Product Recommendations can help TigerGraph customers unlock new revenue streams, improve customer satisfaction, and establish a competitive edge in the e-commerce landscape.
 
 For this application, create a list of the top personas that would use this application. 
 Do not list any personas that deal with application performance or security.
 Focus only on personas that would use a chatbot to ask questions
  about the data within the application.
-Return the list as a Python list data structure.
+Return the list as a Python list data structure using the list name personas.
 Order the list based on the most frequent users of the
 application to the least frequent users of the application.
 """
