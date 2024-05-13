@@ -22,8 +22,8 @@ nav:
     - Fraudster Detection: questions/fraudster-detection.md
     - Mule Account Detection: questions/mule-account-detection.md
     - Financial Customer 360: questions/financial-c360.md
-    - Financial Product Recommendation: questions/financial-product-recommendation.md
-    - Merchant Product Recommendation: questions/merchant-product-recommendation.md
+    - Investment Product Recommendations: questions/investment-product-recommendations.md
+    - Merchant Product Recommendations: questions/merchant-product-recommendations.md
     - Suppy Chain: questions/supply-chain.md
     - Anti-Money Laundering: questions/anti-money-laundering.md
   - Document Data Model: document-data-model.md
