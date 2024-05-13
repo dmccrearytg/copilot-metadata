@@ -40,24 +40,23 @@ def query_openai(question, temperature=0.0):
 # Step 1: Get a list of the personals
 
 personas = [
-    'Supply Chain Manager', 
-    'Operations Manager', 
-    'Logistics Coordinator', 
-    'Inventory Manager', 
-    'Warehouse Manager', 
-    'Purchasing Manager', 
-    'Production Manager', 
-    'Quality Assurance Manager', 
-    'Top Management Executives']
+    "Network Administrator", 
+    "IT Manager", 
+    "Data Analyst", 
+    "IT Consultant", 
+    "Threat Analyst", 
+    "IT Auditor", 
+    "Chief Information Officer", 
+    "Research and Development Engineer",
+    "Network Architect"
+]
 
 question_template = """
-We have created a new web application product called Supply chain management.
+We have created a new web application product Network Digital Twin Knowledge Graph.
 
-Supply chain management is full of dependencies: a product is the result of hundreds of upstream components and processes fulfilling their requirements.  Unfortunately, manufacturers (and other businesses that have multiple levels of inputs contributing to the final outputs) often cannot get basic reports on the bill of materials, timeliness and efficiency, because their information is spread across too many systems, or the systems are poor at working with dependencies.  A graph-based operational digital twin of a supply chain can solve these problems. The graph excels at modeling dependencies. Not only does it show you the current state of your supply chain (observability), but it can simulate operations, to help you respond agilely to shocks and to make preemptive changes to improve supply chain resiliency.
-Observability and monitoring: 
-Tracing impact and root causes: When a particular component/supply/region is disrupted and can't be fixed immediately, the business needs to be able to trace downstream to see what will be affected. A graph-based digital twin can show and report on downstream effects using a Directed Breadth-First Search.  Similarly, the digital twin can trace upstream to see what are the possible root causes of a defect.
-Identifying alternatives: 
-Assessing risks and improving resiliency: Supply change shocks and disruptions WILL occur, but well-prepared businesses work to minimize both the likelihood and impact of disruptions. Algorithms such as degree centrality and betweenness centrality can identify the riskiest stages of a supply chain.
+Cybersecurity is a crucial aspect of big organizations. Enterprises have their own data centers and their own network infrastructure involving a lot of devices. A well-planned attack can lead to serious issues, like data breach, corrupted files, and loss of data. Billions of dollars are lost each year due to cyberattacks.
+
+TigerGraph allows you to connect data from different sources. Data at a scale of terabytes can be loaded into TigerGraph to give a comprehensive view of the network infrastructure of your organization. With visualizations in TigerGraph, users can gain a better visibility of the platform by seeing different components in their Network Infrastructure and tracing different paths leading from a suspicious device or IP address. Different graph algorithms can be run at scale and allows us to detect various kinds of cybersecurity attacks close to real-time. With TigerGraph, users can also extract graph features to Machine Learning models which has the potential to improve the accuracy of those models for tasks like anomaly detection.
 
 For the persona {}, what are the most common questions that this role
 would ask a chatbot?
