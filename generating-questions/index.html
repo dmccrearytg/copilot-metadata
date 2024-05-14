@@ -308,6 +308,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Generating Questions
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -317,6 +328,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sample-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Prompt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-program" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Program
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -473,6 +521,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sample-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Prompt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-program" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Program
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -490,9 +564,25 @@
 
 
 <h1 id="generating-persona-questions">Generating Persona Questions</h1>
-<p>To generate a list of questions for each persona we can use the following prompt.</p>
-<div class="highlight"><pre><span></span><code>
+<p>To generate a list of questions for each persona will need three items.</p>
+<ol>
+<li>The Application Name</li>
+<li>The Application Description</li>
+<li>The Persona Name</li>
+</ol>
+<h2 id="sample-prompt">Sample Prompt</h2>
+<div class="highlight"><pre><span></span><code>We have created a new web application product called {APPLICATION_NAME}.
+
+{APPLICATION_DESCRIPTION}
+
+For the persona {PERSONA}, what are the most common questions that this role
+would ask a chatbot?
+
+For each question, include the parameters to the question in square brackets: &quot;[&quot; and &quot;]&quot;.
+For example, use [geographic location] or [time period] if the question has location and time paraemters.
+Return the results in Markdown numbered list format.
 </code></pre></div>
+<h2 id="sample-program">Sample Program</h2>
 
 
 
