@@ -15,7 +15,9 @@ It analyzes transaction data, including cardholder information, transaction deta
 6. Data Scientist
 7. Operations Manager
 
-## Fraud Analyst
+## Persona Questions
+
+### Persona: Fraud Analyst
 
 1. What is the overall fraud rate for [time period]?
 2. Are there any unusual transaction patterns from [specific geographic location] in the [time period]?
@@ -38,7 +40,7 @@ It analyzes transaction data, including cardholder information, transaction deta
 19. How many confirmed fraud transactions were identified by the system in [time period]?
 20. Can I drill down to the details of fraudulent transactions made in [specific geographic location] during [time period]?
 
-## Customer Service Representative
+### Persona: Customer Service Representative
 
 1. What is the current fraud risk level for the cardholder with ID [Cardholder ID]?
 2. Could you pull up the transaction details for transaction ID [Transaction ID]?
@@ -61,7 +63,7 @@ It analyzes transaction data, including cardholder information, transaction deta
 19. Could you pull up the shopping pattern of cardholder [Cardholder ID] over the past [Time Period]?
 20. Pull up the history of all flagged transactions for cardholder [Cardholder ID].
 
-## Compliance Officer
+### Persona: Compliance Officer
 
 1. What is the current fraud detection rate for [time period]?
 2. Are there any unusual patterns or anomalies that have been detected in [geographic location] in the last [time period]?
@@ -84,7 +86,7 @@ It analyzes transaction data, including cardholder information, transaction deta
 19. What measures or algorithms are currently being used to detect potential credit card fraud?
 20. What is our action plan when fraudulent transactions are detected?
 
-## Risk Manager
+### Persona: Risk Manager
 
 1. What was the total amount of fraudulent transactions detected in the last [time period]?
 2. How many fraudulent transactions have occurred in [geographic location] in the past [time period]?
@@ -102,7 +104,7 @@ It analyzes transaction data, including cardholder information, transaction deta
 14. What were our response times to fraudulent activity over the past [time period]?
 15. What percentage of fraudulent transactions were proceeded by suspicious behaviour in the last [time period]?
 
-## Auditor
+### Persona: Auditor
 
 1. How many suspected fraudulent transactions have been detected within the [time period]?
 2. Can you provide a list of all the transactions performed by [cardholder's name or card number] that have been flagged as potentially fraudulent?
@@ -120,7 +122,7 @@ It analyzes transaction data, including cardholder information, transaction deta
 14. What fraud patterns are most common among transactions made in [specific geographic location]?
 15. Can you provide a list of cardholders who have had more than [specific number] transactions flagged as fraudulent?
 
-## Data Scientist
+### Persona: Data Scientist
 
 1. What were the total number of fraud cases detected in the [time period]?
 2. Can I get a list of all the fraudulent transactions that occurred in [geographic location] during the [time period]?
@@ -143,7 +145,7 @@ It analyzes transaction data, including cardholder information, transaction deta
 19. How much financial loss was prevented by detecting fraud activities in the last [time period]?
 20. What fraud trends have that we seen in [geographic location] in the past [time period]?
 
-## Operations Manager
+### Persona: Operations Manager
 
 1. What is the total number of fraudulent transactions detected in the [time period]?
 2. How much money [in USD] was involved in fraudulent transactions in the [time period]?
