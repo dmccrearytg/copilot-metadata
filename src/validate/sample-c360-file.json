@@ -15,7 +15,7 @@
             "ParameterValue": "12345"
           }
         ],
-        "GSQL_Query": "SELECT last_product FROM purchases WHERE customer_id = @CustomerID",
+        "GSQL_Query": "name or id of the query",
         "GSQL_QueryStatus": "done"
       },
       {
@@ -32,7 +32,7 @@
             "ParameterValue": "2024"
           }
         ],
-        "GSQL_Query": "SELECT SUM(amount) FROM transactions WHERE customer_id = @CustomerID AND YEAR(transaction_date) = @Year",
+        "GSQL_Query": "name or ID of the query",
         "GSQL_QueryStatus": "in-development"
       }
     ]
