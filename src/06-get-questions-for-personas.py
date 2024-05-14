@@ -37,7 +37,30 @@ def query_openai(question, temperature=0.0):
         # If there was an error, return the error message
         return f"Error: {response.status_code} - {response.text}"
 
-# Step 1: Get a list of the personals
+# Set the application name
+application_name = 'Network Digital Twin Knowledge Graph'
+
+application_description = """
+Cybersecurity is a crucial aspect of big organizations. 
+Enterprises have their own data centers and their own network infrastructure involving a lot of devices. 
+A well-planned attack can lead to serious issues, like data breach, corrupted files, and loss of data. 
+Billions of dollars are lost each year due to cyberattacks.
+
+TigerGraph allows you to connect data from different sources. 
+Data at a scale of terabytes can be loaded into TigerGraph to give a 
+comprehensive view of the network infrastructure of your organization. 
+With visualizations in TigerGraph, users can gain a better visibility 
+of the platform by seeing different components in their Network 
+Infrastructure and tracing different paths leading from a suspicious 
+device or IP address. Different graph algorithms can be run at scale 
+and allows us to detect various kinds of cybersecurity attacks close 
+to real-time. With TigerGraph, users can also extract graph features 
+to Machine Learning models which has the potential to improve the 
+accuracy of those models for tasks like anomaly detection.
+
+"""
+
+# Step 1: Get a list of the persona
 
 personas = [
     "Network Administrator", 
@@ -54,9 +77,6 @@ personas = [
 question_template = """
 We have created a new web application product Network Digital Twin Knowledge Graph.
 
-Cybersecurity is a crucial aspect of big organizations. Enterprises have their own data centers and their own network infrastructure involving a lot of devices. A well-planned attack can lead to serious issues, like data breach, corrupted files, and loss of data. Billions of dollars are lost each year due to cyberattacks.
-
-TigerGraph allows you to connect data from different sources. Data at a scale of terabytes can be loaded into TigerGraph to give a comprehensive view of the network infrastructure of your organization. With visualizations in TigerGraph, users can gain a better visibility of the platform by seeing different components in their Network Infrastructure and tracing different paths leading from a suspicious device or IP address. Different graph algorithms can be run at scale and allows us to detect various kinds of cybersecurity attacks close to real-time. With TigerGraph, users can also extract graph features to Machine Learning models which has the potential to improve the accuracy of those models for tasks like anomaly detection.
 
 For the persona {}, what are the most common questions that this role
 would ask a chatbot?

@@ -1,18 +1,33 @@
 # Generating CoPilot Personas
 
+We need an accurate description of a Solution Kit application to generate a list
+of personas that would use the application.  We can then use the following prompt structure:
+
+
+
 ## Prompt
 
-```linenums="0"
-We have created a credit card application fraud application.  Credit card application fraud occurs when someone applies for a credit card using stolen or falsified information, with the intention of using it for unauthorized transactions or financial gain. Perpetrators often use stolen identities or create fake identities to apply for credit cards. They may exploit vulnerabilities in the application process, such as weak identity verification measures, to succeed in their fraudulent activities. This type of fraud can result in financial losses for both individuals and financial institutions, as well as damage to victims' credit scores and reputations. To combat this, many credit card companies employ various security measures, including identity verification checks and fraud detection algorithms.
+```linenums="0" 
+We have created a new Application called {APPLICATION_NAME}.
 
-For this application, create a list of the top personas that would use this application. 
+{APPLICATION DESCRIPTION}
+
+For this application, create a list of the top personas that
+would use a chatbot for this application. 
 Do not list any personas that deal with application performance or security.
-Focus only on personas that would use a chatbot to ask questions about the data within the application.
+Focus only on personas that would use a chatbot to ask questions
+about the data within the application.
+If appropriate, include a persona.
+
+Return a list of the persona names in a Python list called "personas".
+Include a newline after each comma in the list.
+Order the list based on the most frequent users of the
+application to the least frequent users of the application.
 ```
 
 ## Sample Response
 
-1. Fraud Analyst: This professional is responsible for analyzing transactions to detect any fraudulent activities. They would use the application to track, monitor, and analyze data related to financial transactions and detect patterns indicative of fraudulent behavior.
+1. **Fraud Analyst: This professional is responsible for analyzing transactions to detect any fraudulent activities. They would use the application to track, monitor, and analyze data related to financial transactions and detect patterns indicative of fraudulent behavior.
 
 2. Compliance Officer: They ensure the organization conducts business in full compliance with all national and international laws and regulations that pertain to its particular industry. This persona would use the application to ensure the organization is compliant with local, state, and federal rules about fraud detection and prevention.
 
@@ -27,6 +42,8 @@ Focus only on personas that would use a chatbot to ask questions about the data 
 7. Financial Institutions/Banks: These entities would use the application to monitor the transactions of their clients and preemptively identify any suspicious or fraudulent activities.
 
 8. End User/Customer: While they may not directly interact with the application, they are a key persona as they are the subject of the transactions being monitored for potential fraud. A significant aspect of a financial fraud transaction application's function is focused on maintaining the financial security of these individuals.
+
+
 
 ## Python Program
 
@@ -75,9 +92,9 @@ def query_openai(question, temperature=0.0):
 
 question = """
 
-We have created a new web application product called $AppName
+We have created a new web application product called {APP_NAME}
 
-$AppDescription
+{APPLICATION DESCRIPTION}
 
 For this application, create a list of the top personas that would use this application. 
 Do not list any personas that deal with application performance or security.
