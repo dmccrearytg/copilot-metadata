@@ -17,6 +17,7 @@ personas = [
     "Customer Service Representative",
     "Board Members",
 ]
+```
 
 ## Persona Questions
 

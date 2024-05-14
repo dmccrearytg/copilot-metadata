@@ -1,8 +1,10 @@
 # Credit Card Application Fraud
 
-# CoPilot Application Fraud Personas and Questions
+## Description
 
-### Personas Respons
+Credit Card Application fraud detection identifies and prevents unauthorized or deceptive financial applications in real-time.  PII attribute link analysis between Applications detect anomalies and suspicious activity indicative of fraud. TigerGraph models complex relationships and patterns among entities such as shared Name, DOB, Email, Phone, Address, IP, ID, Device, Party, Account, and Card. This enables detection of fraudulent networks and patterns that may be difficult to uncover using traditional relational databases. Using graph algorithms enable organizations to detect and respond to fraudulent transactions quickly and efficiently, ultimately reducing financial losses and protecting consumers from fraudulent activity.
+
+### Personas
 
 For your credit card application fraud detection system, which leverages complex relationships and graph algorithms via TigerGraph, several key personas would interact with a chatbot to ask questions about the data. Here are the top personas focused on the operational and analytical aspects of the system:
 
@@ -27,7 +29,19 @@ For your credit card application fraud detection system, which leverages complex
 
 These personas would utilize a chatbot to interact with the system efficiently, allowing for quick access to data, thereby enabling them to make informed decisions and take timely actions against fraudulent activities.
 
-### Fraud Analysis Questions
+```python
+personas = [
+ 'Fraud Analyst',
+ 'Compliance Officer',
+ 'Risk Manager',
+ 'Customer Support Representative',
+ 'Data Scientist',
+ 'Operations Manager']
+ ```
+
+## Persona Questions
+
+### Persona: Fraud Analysis
 
 For the Fraud Analyst persona, here are some of the most frequent questions they might ask through a chatbot interface, including specific parameters they might need to specify to get relevant information:
 
@@ -58,16 +72,7 @@ For the Fraud Analyst persona, here are some of the most frequent questions they
 
 These questions enable the fraud analyst to delve into specific details of fraudulent activities, understand trends, and assess the effectiveness of current fraud detection measures.
 
-### Compliance Officer Persoan Prompt
-
-```
-For the Compliance Officer Persona, list the most frequent 
-questions that the user would ask that were not in the 
-Fraud Analyst Persona Questions.  For each question, 
-specific any parameters to the question in square brackets "[" and "]".
-```
-
-### Compliance Officer Persoan Reply
+### Personal Compliance Officer
 
 For the Compliance Officer persona, here are some of the most frequent questions they might ask through a chatbot, focusing on regulatory compliance and adherence to legal standards. These questions differ from those typically asked by a Fraud Analyst:
 
@@ -104,17 +109,8 @@ For the Compliance Officer persona, here are some of the most frequent questions
 
 These questions help the Compliance Officer ensure that all operations not only combat fraud effectively but also adhere to regulatory requirements and maintain standards that protect the organization from legal and regulatory risks.
 
-### Risk Manager Prompt
 
-```
-What additional questions would the Risk Manager Persona
-ask that were not already listed in the questions above.
-Use the same response format with parameters in square brackets.
-```
-
-### Risk Manager Prompt
-
-For the Risk Manager persona, their inquiries often center around the broader impact of fraud on the organization, focusing on risk assessment, mitigation strategies, and financial implications. Here are some additional questions that a Risk Manager might ask, distinct from those posed by the Fraud Analyst and Compliance Officer:
+### Personal Risk Manager
 
 1.  **"What is the estimated financial impact of the fraud cases detected in the last \[time period\]?"**
 
@@ -147,97 +143,51 @@ For the Risk Manager persona, their inquiries often center around the broader im
 
     -   Parameter: \[product/service\] - The new product or service to be evaluated for vulnerability to fraud.
 
-These questions enable the Risk Manager to gauge and manage the financial and operational risks associated with fraud, ensuring that strategic decisions are informed by robust data on risk exposure and mitigation effectiveness.
-
-### Customer Support Representative Persona Prompt
-
-```
-What additional questions would the Support Representative Persona
-ask that were not already listed in the questions above?  
-Use the same response format with parameters in square brackets.
-```
-
-### Customer Support Representative Persona Response
+### Persona: Customer Support Representative
 
 For the Customer Support Representative persona, their questions primarily focus on resolving customer concerns and inquiries related to suspected or confirmed fraud cases. Here are some additional questions that a Customer Support Representative might ask, which are distinct from those posed by other personas:
 
 1.  **"Can you confirm if the recent transaction on \[date\] for \[customer ID\] was flagged as fraudulent?"**
-
     -   Parameters: \[date\], \[customer ID\] - The specific date of the transaction and the customer's identification number.
 2.  **"What steps should a customer take after detecting an unauthorized transaction on their account?"**
-
     -   No specific parameters, but this question is essential for guiding customers through the resolution process.
 3.  **"How do I initiate a fraud claim for \[customer ID\] regarding an unauthorized transaction on \[date\]?"**
-
     -   Parameters: \[customer ID\], \[date\] - The customer's ID and the date of the unauthorized transaction for initiating a fraud claim.
 4.  **"Is there a current delay in fraud investigation processing times that I should inform customers about?"**
-
     -   No specific parameters, this question is about overall operational efficiency related to customer inquiries.
 5.  **"What is the status of the fraud investigation for case number \[case number\]?"**
-
     -   Parameter: \[case number\] - The specific case number related to a customer's fraud complaint.
 6.  **"Can you provide a summary of the customer's recent interactions related to fraud alerts for \[customer ID\]?"**
-
     -   Parameter: \[customer ID\] - The identification number of the customer to retrieve interaction history related to fraud alerts.
 7.  **"How do I explain the security features of our fraud detection system to reassure \[customer ID\]?"**
-
     -   Parameter: \[customer ID\] - The customer's ID who needs reassurance about the security features.
 8.  **"Are there any preventive measures \[customer ID\] can take to minimize future fraud risks?"**
-
     -   Parameter: \[customer ID\] - The customer's identification number for advising on preventive measures against fraud.
 9.  **"What compensation policies are applicable for customers affected by fraudulent transactions?"**
-
     -   No specific parameters, this question concerns the policies related to compensating customers affected by fraud.
 10.  **"Has the fraud alert for \[customer ID\] been resolved, and what were the findings?"**
-
     -   Parameter: \[customer ID\] - The customer's ID to check the resolution and findings of a fraud alert.
 
 These questions are crucial for Customer Support Representatives as they directly interact with customers affected by fraud, providing them with timely and accurate information to manage their concerns effectively.
 
-### Data Scientist Persona Prompt
-
-```
-For the Data Scientist persona, what additional questions
-would the Data Scientist ask that were not already listed
-in the questions above?  Use the same response format with
-parameters in square brackets.
-```
-
-### Data Scientist Persona Response
-
-For the Data Scientist persona, the questions are generally focused on data analysis, model development, and the enhancement of fraud detection algorithms. Here are some additional questions that a Data Scientist might ask, distinct from those posed by other personas:
+### Persona: Data Scientist
 
 1.  **"Can you provide the dataset of transactions marked as fraudulent in the last \[time period\]?"**
     -   Parameter: \[time period\] - The specific time period for which the dataset is required (e.g., "last 6 months").
 2.  **"What variables were most predictive of fraud in the latest model evaluations?"**
-
 3.  **"How does the accuracy of our current fraud detection models compare to those from \[time period\]?"**
     -   Parameter: \[time period\] - The specific time period to compare with current model accuracy.
 5.  **"What is the false positive rate of our current fraud detection model for \[product line\]?"**
-
     -   Parameter: \[product line\] - The specific product line for which the false positive rate is queried.
 6.  **"Can we access external data sources that could be integrated to enhance fraud detection in \[market segment\]?"**
-
     -   Parameter: \[market segment\] - The market segment (e.g., "retail banking", "online transactions") for potential data integration.
 7.  **"What impact have recent changes to the fraud detection models had on detection rates?"**
-
 8.  **"Can you perform a cross-validation test on the latest fraud prediction model to ensure its robustness?"**
-
 9.  **"How are emerging fraud trends in the \[industry sector\] being incorporated into our models?"**
-
 10.  **"What are the computational requirements for running the latest fraud detection models, and can our current infrastructure support them?"**
 
 
-These questions are crucial for Data Scientists as they focus on refining fraud detection models and ensuring they are both accurate and efficient, using the latest techniques and data available.
-
-I removed the following questions since they are not really part of the data set
-**"Are there any new algorithms or data science techniques that could improve our fraud detection capabilities?"**
-
-## Operations Manager Questions
-
-### Operations Manager Questions Prompt
-
-### Operations Manager Questions Response
+### Persona: Operations Manager Questions Prompt
 
 For the Operations Manager persona, the focus is primarily on ensuring the smooth and efficient operation of the fraud detection system, managing resources, and overseeing the entire operational framework. Here are some additional questions that an Operations Manager might ask, which are distinct from those posed by other personas:
 

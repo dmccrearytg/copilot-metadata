@@ -4,35 +4,7 @@
 
 Identify individuals or entities engaging in fraudulent activities within the financial domain, such as unauthorized transactions, money laundering, or identity theft. For example, it may identify unusual spending patterns, multiple accounts linked to the same individual, or transactions involving high-risk entities or locations. Once potential fraudsters are identified, the solution may trigger alerts for manual review by fraud investigators or automatically block suspicious transactions in real-time. Graph algorithms such as community detection can identify clusters of interconnected entities that may represent fraud rings or syndicates. Link analysis algorithms can trace connections between suspicious entities and uncover commonalities or shared characteristics that may suggest collusion or coordination in fraudulent activities. Centrality measures can identify influential nodes within the network, such as individuals with many connections or accounts with high transaction volumes, which may be key players in fraudulent schemes.
 
-## Persona Prompt
-
-```linenums="0"
-We have created a new application we call the "Fraudster Detection" application.  
-The Fraudster Detection application identifies individuals or entities engaging in 
-fraudulent activities within the financial domain, such as unauthorized transactions, 
-money laundering, or identity theft.   For example, it may identify unusual spending 
-patterns, multiple accounts linked to the same individual, or transactions involving 
-high-risk entities or locations. Once potential fraudsters are identified, 
-the solution may trigger alerts for manual review by fraud investigators or 
-automatically block suspicious transactions in real-time. Graph algorithms 
-such as community detection can identify clusters of interconnected entities 
-that may represent fraud rings or syndicates. Link analysis algorithms can 
-trace connections between suspicious entities and uncover commonalities or 
-shared characteristics that may suggest collusion or coordination in fraudulent 
-activities. Centrality measures can identify influential nodes within the network, 
-such as individuals with many connections or accounts with high transaction volumes, 
-which may be key players in fraudulent schemes.
-
-For this application, create a list of the top personas that would use this application. 
-Do not list any personas that deal with application performance or security.
-Focus only on personas that would use a chatbot to ask questions
- about the data within the application.
-Return the list as a Python list data structure.
-Order the list based on the most frequent users of the
-application to the least frequent users of the application.
-```
-
-## Persona Response
+## Personas
 
 ```Python
 personas = [
@@ -50,9 +22,9 @@ personas = [
 
 The above roles represent people who would interact with the application in a professional capacity and use a chatbot to understand the data. They are ordered based on the assumption that individuals working directly with fraud detection and financial crime prevention (fraud investigator, financial crime analyst, etc.) would use it more frequently than those in more general or oversight roles (bank manager, law enforcement officer, etc.).
 
-## Questions
+## Persona Questions
 
-## Persona: Fraud Investigator 
+### Persona: Fraud Investigator 
 
 1. What is the total sum of suspicious transactions detected by the Fraudster Detection application in the past [time period]?
 2. Can you show me the list of high-risk entities or locations that the fraudsters have been transacting with in the [geographic location]?
@@ -66,11 +38,7 @@ The above roles represent people who would interact with the application in a pr
 10. Could you trace the connections between suspicious entities and uncover commonalities or shared characteristics suggesting collusion in fraudulent activities within the past [time period]?
 11. Are there any alerts triggered for manual review within the last [time period] in the [geographic location]?
 
-
-
-
-
-## Persona: Financial Crime Analyst 
+### Persona: Financial Crime Analyst 
 
 1. What are the recent transactions made by [account number]?
 2. Can you show me the transaction history for [account number] over the [time period]?
@@ -93,9 +61,7 @@ The above roles represent people who would interact with the application in a pr
 19. Can you identify any potential fraud rings or syndicates in our network over the [time period]?
 20. Have there been any identity theft instances involving [account number]?
 
-
-
-## Persona: Compliance Officer 
+### Persona: Compliance Officer 
 
 1. What were the total number of fraudulent transaction alerts in the [time period]?
 2. Can you show me a list of all the high-risk entities or locations for the [time period]?
@@ -116,9 +82,7 @@ The above roles represent people who would interact with the application in a pr
 17. Show the transaction history of the most influential nodes during the [time period].
 18. Have there been any suspect transactions involving [high-risk entity] during the [time period]?
 
-
-
-## Persona: Risk Management Specialist 
+### Persona: Risk Management Specialist 
 
 1. Can you identify any sudden increases in transaction volumes for [account number]?
 2. Have there been any multiple transactions above the threshold value by [user name] within the [time period]?
@@ -136,9 +100,7 @@ The above roles represent people who would interact with the application in a pr
 14. How many suspicious transactions have been automatically blocked in real-time in the last [time period]?
 15. Are there any individuals with many connections that could suggest collusion in fraudulent activities within the last [time period]?
 
-
-
-## Persona: Forensic Accountant 
+### Persona: Forensic Accountant 
 
 1. What are the latest alerts triggered by the Fraudster Detection application?
 2. Show me the details of the suspicious transaction with ID [transaction ID].
@@ -156,9 +118,7 @@ The above roles represent people who would interact with the application in a pr
 14. Can you detect any collusion or coordination in fraudulent activities involving entity [Entity ID]?
 15. What transactions were automatically blocked as suspicious in the last [time period]?
 
-
-
-## Persona: Bank Manager 
+### Persona: Bank Manager 
 
 1. How many [type of fraud] cases have been identified in the [time period]?
 2. What is the total amount of money potentially involved in fraudulent activity in the [time period]?
@@ -176,9 +136,7 @@ The above roles represent people who would interact with the application in a pr
 14. Have there been any cases of identity theft involving [individual's name]?
 15. What is the status of the review for the [reference number] identity theft case?
 
-
-
-## Persona: Internal Auditor 
+### Persona: Internal Auditor 
 
 1. How many suspicious transactions have been flagged by the Fraudster Detection application in the [time period]?
 2. What are the top flagged reasons for potential fraudulent activities within the last [time period]?
@@ -194,9 +152,7 @@ The above roles represent people who would interact with the application in a pr
 12. What were the most common characteristics shared by suspicious entities flagged in the last [time period] suggesting possible collusion or coordination in fraudulent activities?
 13. Can you list transactions linked to high-risk entities that were identified in [geographic location] within the last [time period]?
 
-
-
-## Persona: Law Enforcement Officer 
+### Persona: Law Enforcement Officer 
 
 1. What are the most recent fraudulent activities detected in [geographic location]?
 2. How many fraudulent transactions have been made within the [date range]?
@@ -209,9 +165,7 @@ The above roles represent people who would interact with the application in a pr
 9. How many alerts have been triggered for potential fraudulent activities in the [time period]?
 10. Which accounts are identified as the key players in the suspected fraudulent schemes based on their centrality measures within the [date range]?
 
-
-
-## Persona: Regulatory Agency Representative 
+### Persona: Regulatory Agency Representative 
 
 1. How does the "Fraudster Detection" application identify [specific fraudulent activity]?
 2. Can the Fraudster Detection system notify regulatory authorities automatically when suspicious behavior or activities are detected?
