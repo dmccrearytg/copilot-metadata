@@ -1,0 +1,79 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "ApplicationID": {
+        "type": "string",
+        "_comment": "Unique identifier for the application."
+      },
+      "ApplicationName": {
+        "type": "string",
+        "_comment": "Human-readable name of the application.  It should be short and not include classifiers such as 'knowledge graph'."
+      },
+      "ApplicationDescription": {
+        "type": "string",
+        "_comment": "Detailed description of what the application does.  Focus on how the application is used to solve business problems"
+      },
+      "Owner": {
+        "type": "string",
+        "_comment": "Name of the owner or responsible party for the application."
+      },
+      "CurrentDevelopmentStatus": {
+        "type": "string",
+        "enum": ["not-started", "in-development", "done"],
+        "_comment": "Current stage in the development lifecycle of the application."
+      },
+      "Personas": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "minItems": 0,
+        "_comment": "Optional. List of personas representing typical users of the application."
+      },
+      "Questions": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "QuestionID": {
+              "type": "string"
+            },
+            "QuestionText": {
+              "type": "string"
+            },
+            "QuestionPriority": {
+              "type": "string",
+              "enum": ["critical", "high", "medium", "low"]
+            },
+            "QuestionParameters": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "ParameterName": {
+                    "type": "string"
+                  },
+                  "ParameterValue": {
+                    "type": "string"
+                  }
+                },
+                "required": ["ParameterName", "ParameterValue"]
+              }
+            },
+            "GSQL_Query": {
+              "type": "string"
+            },
+            "GSQL_QueryStatus": {
+              "type": "string",
+              "enum": ["not-started", "in-development", "done"]
+            }
+          },
+          "required": ["QuestionID", "QuestionText", "QuestionPriority", "GSQL_Query", "GSQL_QueryStatus"],
+          "_comment": "Details about the questions to be addressed by the chatbot application."
+        }
+      }
+    },
+    "required": ["ApplicationID", "ApplicationName", "ApplicationDescription", "Owner", "CurrentDevelopmentStatus", "Questions"]
+  }
+  
