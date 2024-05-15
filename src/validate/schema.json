@@ -18,6 +18,26 @@
         "type": "string",
         "_comment": "Name of the owner or responsible party for the application."
       },
+      "TargetAvailabilityDate": {
+        "type": "string",
+        "_comment": "The timeframe we would like this application to be available to our customers.  This is currently a freeform text."
+      },
+      "GraphAlgorithms": {
+        "type": "string",
+        "_comment": "A list of the graph algorithms used in this solution kit separated by commas."
+      },
+      "GraphFeatures": {
+        "type": "string",
+        "_comment": "A list of the graph algorithms used in this solution kit separated by commas."
+      },
+      "ROIDashboardMetrics": {
+        "type": "string",
+        "_comment": "A list of the graph algorithms used in this solution kit separated by commas."
+      },
+      "MLModels": {
+        "type": "string",
+        "_comment": "A list of the machine-learning models used in this solution kit separated by commas"
+      },
       "CurrentDevelopmentStatus": {
         "type": "string",
         "enum": ["not-started", "in-development", "done"],
