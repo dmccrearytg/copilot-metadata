@@ -1,0 +1,12 @@
+[
+    {
+        "ApplicationID": "Transaction Fraud",
+        "ApplicationDescription": "Credit card transaction fraud detection identifies and prevents unauthorized or deceptive transactions.",
+        "TargetAvailabilityDate": "Q1 - Currently available",
+        "GraphAlgorithmsList": "Weighted Weakly Connected Communities\nShortest Path Length (Closeness)\nPageRank (Centrality)",
+        "GraphFeaturesList": "Weighted WCC\nPageRank\nShortest Path Length\nCommunity Size\nMerCat Avg Off\nCommunity Total Amount\nMax Txn Cnt within interval\nRepeated Card Cnt",
+        "ROIDashboardMetricsList": "More Fraud Transactions Blocked\nMore Legit Transactions Allowed\n$ Value More Fraud Transactions Blocked\n$ Value More Legit Transactions Allowed\n% Increase Recall with Graph Features\n% Increase Precision with Graph Features",
+        "MLModelsList": "XGBoost",
+        "Sample CoPilot Questions": "Link to Transaction Fraud Question"
+    }
+]

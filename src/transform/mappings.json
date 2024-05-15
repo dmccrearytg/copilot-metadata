@@ -2,8 +2,8 @@
     {"from": "Solution", "to": "ApplicationID"},
     {"from": "Application Description Text", "to": "ApplicationDescription"},
     {"from": "Availability Target", "to": "TargetAvailabilityDate"},
-    {"from": "Graph Algorithms", "to": "GraphAlgorithms"},
-    {"from": "Graph Features (top 6)", "to": "GraphFeatures"},
-    {"from": "ROI Dashboard Metrics", "to": "ROIDashboardMetrics"},
-    {"from": "ML Models", "to": "MLModels"}
+    {"from": "Graph Algorithms", "to": "GraphAlgorithmsList"},
+    {"from": "Graph Features (top 6)", "to": "GraphFeaturesList"},
+    {"from": "ROI Dashboard Metrics", "to": "ROIDashboardMetricsList"},
+    {"from": "ML Models", "to": "MLModelsList"}
 ]
