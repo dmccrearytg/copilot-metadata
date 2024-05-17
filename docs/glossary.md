@@ -8,9 +8,10 @@ Secondary or alternative terms used to refer to a concept or entity in a graph. 
 
 A type of directed edge in a graph where one concept vertex (the broader) encompasses or is more general than another concept vertex (the narrower). This relationship is used to build hierarchical structures within the graph.
 
-#### Chat History
+#### Chat History (User)
 
-A collection of all messages, transactions, and interactions that have occurred in a chat session. This historical data is used for analysis, training chat models, or reviewing past interactions to enhance user experience and system functionality.
+A collection of all prior questions and answers in a session created by a user.
+Our goal is to allow each user to view their prior chat histories.
 
 #### Chat Log
 
@@ -63,6 +64,11 @@ The process of identifying, disambiguating, and linking mentions of entities in 
 #### Narrower Concept Relationship
 
 A type of directed edge in a graph where one concept vertex (the narrower) is encompassed by or is more specific than another concept vertex (the broader). It represents the inverse of a broader concept relationship.
+
+#### Negative Response
+
+A response from a user that a question was not answered by a chatbot or agent.  Negative responses are analyzed by the system, classified and frequency analysis is generated.  This allows developers
+to focus their efforts on creating queries that answer the most frequently unanswered questions.
 
 #### Notes
 
