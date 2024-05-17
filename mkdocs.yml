@@ -13,7 +13,10 @@ nav:
   - Getting Started: getting-started.md
   - Concepts:
     - Introduction: concepts/index.md
+    - Metadata Architecture: concepts/architecture.md
     - Metadata JSON File: concepts/json-file-format.md
+    - Metadata Transformers: concepts/metadata-transformers.md
+    - Metadata Loaders: concepts/metadata-loaders.md
   - Generating Personas: generating-personas.md
   - Generating Questions: generating-questions.md
   - Solution Kit Questions:
