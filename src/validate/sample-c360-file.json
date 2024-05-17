@@ -1,40 +1,42 @@
 {
-    "ApplicationID": "customer-360",
-    "ApplicationName": "Customer 360",
-    "ApplicationDescription": "A program that tracks all the touchpoints for a customer.",
-    "Owner": "John Doe",
-    "CurrentDevelopmentStatus": "in-development",
-    "Questions": [
-      {
-        "QuestionID": "Q1",
-        "QuestionText": "What was the last product purchased by the customer?",
-        "QuestionPriority": "high",
-        "QuestionParameters": [
-          {
-            "ParameterName": "CustomerID",
-            "ParameterValue": "12345"
-          }
-        ],
-        "GSQL_Query": "name or id of the query",
-        "GSQL_QueryStatus": "done"
-      },
-      {
-        "QuestionID": "Q2",
-        "QuestionText": "What is the total spending of the customer this year?",
-        "QuestionPriority": "medium",
-        "QuestionParameters": [
-          {
-            "ParameterName": "CustomerID",
-            "ParameterValue": "12345"
-          },
-          {
-            "ParameterName": "Year",
-            "ParameterValue": "2024"
-          }
-        ],
-        "GSQL_Query": "name or ID of the query",
-        "GSQL_QueryStatus": "in-development"
-      }
-    ]
-  }
+  "$schema": "solution-kit-schema.json",
+  "ApplicationID": "customer-360",
+  "ApplicationName": "Customer 360",
+  "ApplicationDescription": "A program that tracks all the touchpoints for a customer.",
+  "CurrentDevelopmentStatus": "in-development",
+  "Owner": "John Doe",
   
+  
+  "Questions": [
+    {
+      "QuestionID": "Q1",
+      "QuestionText": "What was the last product purchased by the customer?",
+      "QuestionPriority": "high",
+      "QuestionParameters": [
+        {
+          "ParameterName": "CustomerID",
+          "ParameterValue": "12345"
+        }
+      ],
+      "GSQL_Query": "name or id of the query",
+      "GSQL_QueryStatus": "done"
+    },
+    {
+      "QuestionID": "Q2",
+      "QuestionText": "What is the total spending of the customer this year?",
+      "QuestionPriority": "medium",
+      "QuestionParameters": [
+        {
+          "ParameterName": "CustomerID",
+          "ParameterValue": "12345"
+        },
+        {
+          "ParameterName": "Year",
+          "ParameterValue": "2024"
+        }
+      ],
+      "GSQL_Query": "name or ID of the query",
+      "GSQL_QueryStatus": "in-development"
+    }
+  ]
+}

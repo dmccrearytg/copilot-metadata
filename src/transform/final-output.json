@@ -1,0 +1,437 @@
+[
+    {
+        "ApplicationID": "Transaction Fraud",
+        "ApplicationDescription": "Credit card transaction fraud detection identifies and prevents unauthorized or deceptive transactions in real-time. It analyzes transaction data, including cardholder information, transaction details, and historical patterns, to detect anomalies and suspicious activity indicative of fraud. TigerGraph models complex relationships and patterns among entities such as cardholders, merchants, transactions, and geographic locations. This enable detection of fraudulent networks and patterns that may be difficult to uncover using traditional relational databases. Using graph algorithms enable organizations to detect and respond to fraudulent transactions quickly and efficiently, ultimately reducing financial losses and protecting consumers from fraudulent activity.",
+        "TargetAvailabilityDate": "Q1 - Currently available",
+        "GraphAlgorithmsList": [
+            "Weighted Weakly Connected Communities",
+            "Shortest Path Length (Closeness)",
+            "PageRank (Centrality)"
+        ],
+        "GraphFeaturesList": [
+            "Weighted WCC",
+            "PageRank",
+            "Shortest Path Length",
+            "Community Size",
+            "MerCat Avg Off",
+            "Community Total Amount",
+            "Max Txn Cnt within interval",
+            "Repeated Card Cnt"
+        ],
+        "ROIDashboardMetricsList": [
+            "More Fraud Transactions Blocked",
+            "More Legit Transactions Allowed",
+            "$ Value More Fraud Transactions Blocked",
+            "$ Value More Legit Transactions Allowed",
+            "% Increase Recall with Graph Features",
+            "% Increase Precision with Graph Features"
+        ],
+        "MLModelsList": [
+            "XGBoost"
+        ],
+        "Sample CoPilot Questions": "Link to Transaction Fraud Question"
+    },
+    {
+        "ApplicationID": "Application Fraud",
+        "ApplicationDescription": "Credit Card Application fraud detection identifies and prevents unauthorized or deceptive financial applications in real-time.  PII attribute link analysis between Applications detect anomalies and suspicious activity indicative of fraud. TigerGraph models complex relationships and patterns among entities such as shared Name, DOB, Email, Phone, Address, IP, ID, Device, Party, Account, and Card. This enables detection of fraudulent networks and patterns that may be difficult to uncover using traditional relational databases. Using graph algorithms enable organizations to detect and respond to fraudulent transactions quickly and efficiently, ultimately reducing financial losses and protecting consumers from fraudulent activity.",
+        "TargetAvailabilityDate": "Q2 - Currently available",
+        "GraphAlgorithmsList": [
+            "Attribute-based Similarity (Exact Matching)",
+            "MinHash-based Similarity (Fuzzy Matching)",
+            "Weighted WCC (Full Graph)",
+            "Weighted WCC (Approximate)"
+        ],
+        "GraphFeaturesList": [
+            "Degree of connection to closest fraud app",
+            "Path of connection to closest fraud app",
+            "CC app node count",
+            "Distinct count of each PII in CC",
+            "Count of nodes connected via each PII",
+            "Count of nodes only connected via each PII"
+        ],
+        "ROIDashboardMetricsList": [
+            "More Fraud Applications Blocked",
+            "More Legit Application Allowed",
+            "$ Value More Fraud Applications Blocked",
+            "$ Value More Legit Applications Allowed",
+            "% Increase Recall with Graph Features",
+            "% Increase Precision with Graph Features"
+        ],
+        "MLModelsList": [
+            "XGBoost"
+        ],
+        "Sample CoPilot Questions": "https://dmccrearytg.github.io/copilot-metadata/questions/credit-card-application-fraud/"
+    },
+    {
+        "ApplicationID": "Know Your Customer",
+        "ApplicationDescription": "Know Your Customer (KYC) verifies the identity of customers and assess potemtial risk of financial crime. Solution collects and analyzes customer data, including personal information, transaction history, and other relevant data points, to ensure compliance with regulatory requirements and mitigate financial risks. Graph databases models and analyzes complex relationships and connections between customers, accounts, transactions, and other entities. TigerGraph enables comprehensive link analysis, anomaly detection, and network visualization, allowing financial institutions to identify suspicious patterns and behaviors more effectively. Coupled with real-time processing and scalability, TigerGraph's KYC solution can analyze large volumes of data efficiently and adapt to evolving regulatory requirements and fraud threats, ultimately enhancing the accuracy and effectiveness of customer due diligence processes.",
+        "TargetAvailabilityDate": "Q1 - Currently available",
+        "GraphAlgorithmsList": [
+            "Cosine Similarity",
+            "Jaccard Similarity",
+            "Attribute-based Similarity (Exact Matching)",
+            "MinHash-based Similarity (Fuzzy Matching)",
+            "Weighted WCC (Full Graph)",
+            "Weighted WCC (Approximate)"
+        ],
+        "GraphFeaturesList": [
+            "Degree of connection to closest fraud customer",
+            "Path of connection to closest fraud customer",
+            "CC customer node count",
+            "Distinct count of each PII in CC",
+            "Count of nodes connected via each PII",
+            "Count of nodes only connected via each PII"
+        ],
+        "ROIDashboardMetricsList": [
+            "More Fraud Customers Blocked",
+            "More Legit Customers Allowed",
+            "$ Value More Fraud Customers Blocked",
+            "$ Value More Legit Customers Allowed",
+            "% Increase Recall with Graph Features",
+            "% Increase Precision with Graph Features"
+        ],
+        "MLModelsList": [
+            "XGBoost"
+        ],
+        "Sample CoPilot Questions": "https://dmccrearytg.github.io/copilot-metadata/questions/know-your-customer-er/"
+    },
+    {
+        "ApplicationID": "Mule Account Detection",
+        "ApplicationDescription": "Mule account detection in financial crime is a critical endeavor aimed at identifying bank accounts that are used to receive and disperse money from illicit activities. These mule accounts, which may be involved either knowingly or unknowingly in these operations, present a significant challenge for financial institutions. The rapid movement of funds through an extensive and seemingly unconnected network of accounts, spread across numerous financial institutions, complicates the tracking and halting of such illicit transactions. Financial institutions are therefore tasked with detecting this activity promptly to prevent further fund transfer and ensure the return of assets to their rightful owners. TigerGraph's solutions address this challenge through a suite of sophisticated graph algorithms that enable real-time monitoring, feature engineering for machine learning, and anomaly detection to trace illegal funds effectively. Community Detection is employed to unveil clusters within the transaction network, highlighting groups of accounts that work in concert to move illicit funds. The Centrality (PageRank) algorithm identifies key accounts that act as central nodes in the distribution network, crucial for disrupting the flow of illicit money. Closeness (Shortest Path) analysis reveals the most direct routes for money laundering, aiding in the trace back to the source. Lastly, Deep Link Analysis uncovers hidden connections between accounts, providing a comprehensive understanding of the network's structure and operation. Together, these algorithms form the backbone of TigerGraph's approach to dismantling the complex networks of mule accounts, safeguarding the financial system against the movement of illicit funds.",
+        "TargetAvailabilityDate": "Q2 - Currently available",
+        "GraphAlgorithmsList": [
+            "Weighted WCC",
+            "Shortest Path Length",
+            "PageRank"
+        ],
+        "GraphFeaturesList": [
+            "Weighted WCC",
+            "Community Size",
+            "Shortest Path Length",
+            "PageRank",
+            "Fraudster cnt via shared device",
+            "Fraudster cnt via shared IP ",
+            "Neighbor Average Receiving Amount "
+        ],
+        "ROIDashboardMetricsList": [
+            "More Mule Accounts Blocked",
+            "More Legit AccountsAllowed",
+            "$ Value More Mule Accounts Blocked",
+            "$ Value More Legit Accounts Allowed",
+            "% Increase Recall with Graph Features",
+            "% Increase Precision with Graph Features"
+        ],
+        "MLModelsList": [
+            "XGBoost"
+        ],
+        "Sample CoPilot Questions": "https://dmccrearytg.github.io/copilot-metadata/questions/mule-account-detection/"
+    },
+    {
+        "ApplicationID": "Financial Customer 360",
+        "ApplicationDescription": "Customer 360 allows financial institutions to gain a comprehensive view of each customer's interactions, preferences, and needs across all touchpoints. Tigergraph can connect data silos across an institution such as banking transactions, online interactions, customer service inquiries, and social media engagements. The Customer 360 platform provides valuable insights for targeted product offerings. Additionally, it fosters stronger customer relationships, improves retention rates, and ultimately drives profitability through increased customer satisfaction and loyalty.",
+        "TargetAvailabilityDate": "Q2",
+        "GraphAlgorithmsList": [
+            "In design"
+        ],
+        "GraphFeaturesList": [
+            "In design"
+        ],
+        "ROIDashboardMetricsList": [
+            "In design"
+        ],
+        "MLModelsList": [
+            ""
+        ],
+        "Sample CoPilot Questions": "https://dmccrearytg.github.io/copilot-metadata/questions/financial-c360/"
+    },
+    {
+        "ApplicationID": "Investment Product Recommendations",
+        "ApplicationDescription": "Investment Product Recommendations empower leading financial companies to suggest highly relevant financial product offerings to their users. By modeling the complex relationships between assets, clients, and investment products as a graph financial companies can uncover hidden patterns and correlations that traditional databases miss. With TigerGraph's scalable and high-performance graph processing capabilities vast amounts of data can be analyzed in real-time, providing highly personalized investment recommendations that take into account each client's unique financial profile, risk tolerance, and investment goals. By leveraging TigerGraph's graph database financial companies can deliver unparalleled user experiences that drive client loyalty and growth while staying ahead of the competition.",
+        "TargetAvailabilityDate": "Q2",
+        "GraphAlgorithmsList": [
+            "Not started"
+        ],
+        "GraphFeaturesList": [
+            "Not started"
+        ],
+        "ROIDashboardMetricsList": [
+            "Not started"
+        ],
+        "MLModelsList": [
+            ""
+        ],
+        "Sample CoPilot Questions": "https://dmccrearytg.github.io/copilot-metadata/questions/investment-product-recommendations/"
+    },
+    {
+        "ApplicationID": "Merchant Product Recommendations",
+        "ApplicationDescription": "Merchant Product Recommendations enhances the checkout experience by enabling financial payment providers with ability to suggest highly relevant products to customers at the point of sale. By analyzing the complex relationships between products, customers, and merchants, businesses can identify patterns and correlations that drive sales and revenue. With TigerGraph's graph database, businesses can analyze vast amounts of transactional data in real-time to uncover hidden patterns and correlations, provide personalized product recommendations that increase average order value and customer satisfaction, and optimize inventory and reduce waste by identifying slow-moving products optimizing product offerings.  Merchant Product Recommendations can help TigerGraph customers unlock new revenue streams, improve customer satisfaction, and establish a competitive edge in the e-commerce landscape.",
+        "TargetAvailabilityDate": "Q3",
+        "GraphAlgorithmsList": [
+            "Not started"
+        ],
+        "GraphFeaturesList": [
+            "Not started"
+        ],
+        "ROIDashboardMetricsList": [
+            "Not started"
+        ],
+        "MLModelsList": [
+            ""
+        ],
+        "Sample CoPilot Questions": "https://dmccrearytg.github.io/copilot-metadata/questions/merchant-product-recommendations/"
+    },
+    {
+        "ApplicationID": "Anti-Money Laundering",
+        "ApplicationDescription": "Anti-Money Laundering empowers financial institutions to detect and prevent financial crimes by modeling complex relationships between transactions, accounts, and entities as a graph.  Anti-Money Laundering enables financial institutions to monitor and detect suspicious transactions in real time, automate identification of high-risk customers and their activities, and track transaction flows with enhanced due diligence and Know-Your-Customer (KYC) compliance.  Anti-Money Laundering helps TigerGraph customers stay ahead of the curve in the fight against financial crime reducing risk of reputational damage and maintaining trust with their customers.",
+        "TargetAvailabilityDate": "Q4",
+        "GraphAlgorithmsList": [
+            "Weighted WCC",
+            "MaxFlow",
+            "Circle Detection (custom algorithm)"
+        ],
+        "GraphFeaturesList": [
+            "Not started"
+        ],
+        "ROIDashboardMetricsList": [
+            "Not started"
+        ],
+        "MLModelsList": [
+            ""
+        ],
+        "Sample CoPilot Questions": "https://dmccrearytg.github.io/copilot-metadata/questions/anti-money-laundering/"
+    },
+    {
+        "ApplicationID": "Supply Chain Management",
+        "ApplicationDescription": "Supply chain management is fully of dependencies: a product is the result of hundreds of upstream components and processes fulfilling their requirements.  Unfortunately, manufacturers (and other business that have multiple levels of inputs contributing to the final outputs) often cannot get basic reports on bill of materials, timeliness and efficiency, because their information is spread across too many systems, or the systems are poor at working with dependencies.  A graph-based operational digital twin of a supply chain can solve these problems. The graph excels at modeling dependencies. Not only does it show you the current state of your supply chain (observability), but it can simulate operations, to help you response agilely to shocks and to make preemptive changes to improve supply chain resiliency.\nObservability and monitoring: \nTracing impact and root causes: When a particular component/supply/region is disrupted and can't be fixed immeditately, the business needs to be able to trace downstream to see what will be affected. A graph-based digital twin can show and report on downstream effects using Directed Breadth First Search.  Similarly, the digital twin can trace upstream to see what are the possible root causes of a defect.\nIdentifying alternatives: \nAssessing risks and improving resiliency: Supply change shocks and disruptions WILL occur, but well-prepared businesses work to minimize both the likelihood and impact of disruptions. Algorithms such as degree centrality and betweenness centrality can identity the riskiest stages of a supply chain.",
+        "TargetAvailabilityDate": "Q2",
+        "GraphAlgorithmsList": [
+            "Betweenness Centrality",
+            "Shortest Path",
+            "MaxFlow",
+            "Transitive Closure (Breadth First Search)",
+            "Degree Centrality"
+        ],
+        "GraphFeaturesList": [
+            "In design"
+        ],
+        "ROIDashboardMetricsList": [
+            "In design"
+        ],
+        "MLModelsList": [
+            ""
+        ],
+        "Sample CoPilot Questions": "https://dmccrearytg.github.io/copilot-metadata/questions/supply-chain-management/"
+    },
+    {
+        "ApplicationID": "Inventory Management",
+        "ApplicationDescription": "In the contemporary business environment mastering inventory management transcends mere necessity evolving into a strategic competitive advantage. Enterprises contend with a labyrinth of challenges including management of vast data volumes, intricate supply chain networks, and the critical need for real-time insights. Traditional inventory management approaches with their linear and static structures often stumble when confronted with the agility and depth demanded by this complexity.\nIn summary as businesses confront the multifaceted challenges of inventory management in today's dynamic landscape TigerGraph offers a compelling solution with ability to model complex relationships, deliver real-time insights, and adapt to change empowering organizations to turn inventory management into strategic advantage.",
+        "TargetAvailabilityDate": "Q2",
+        "GraphAlgorithmsList": [
+            "In design"
+        ],
+        "GraphFeaturesList": [
+            "In design"
+        ],
+        "ROIDashboardMetricsList": [
+            "In design"
+        ],
+        "MLModelsList": [
+            ""
+        ],
+        "Sample CoPilot Questions": "https://dmccrearytg.github.io/copilot-metadata/questions/inventory-management/"
+    },
+    {
+        "ApplicationID": "Network Digital Twin",
+        "ApplicationDescription": "Cybersecurity is a crucial aspect of big organizations. Enterprises have their own data centers and their own network infrastructure involving a lot of devices. A well-planned attack can lead to serious issues, like data breach, corrupted files, and loss of data. Billions of dollars are lost each year due to cyberattacks.\n\nTigerGraph allows you to connect data from different sources. Data at a scale of terabytes can be loaded into TigerGraph to give a comprehensive view of the network infrastructure of your organization. With visualizations in TigerGraph, users can gain a better visibility of the platform by seeing different components in their Network Infrastructure and tracing different paths leading from a suspicious device or IP address. Different graph algorithms can be run at scale and allows us to detect various kinds of cybersecurity attacks close to real-time. With TigerGraph, users can also extract graph features to Machine Learning models which has the potential to improve the accuracy of those models for tasks like anomaly detection.",
+        "TargetAvailabilityDate": "Q2",
+        "GraphAlgorithmsList": [
+            "In design"
+        ],
+        "GraphFeaturesList": [
+            "In design"
+        ],
+        "ROIDashboardMetricsList": [
+            "In design"
+        ],
+        "MLModelsList": [
+            ""
+        ],
+        "Sample CoPilot Questions": "https://dmccrearytg.github.io/copilot-metadata/questions/network-digital-twin-knolwedge-graph/"
+    },
+    {
+        "ApplicationID": "Customer ID (Entity Resultion)",
+        "ApplicationDescription": "Entity Resolution excels at accurately identifying and linking entities across disparate datasets focusing on Personally Identifiable Information (PII) such as digital fingerprints, email addresses, phone numbers, and physical addresses. By seamlessly integrating PII from various sources businesses can create a unified view of each customer. This comprehensive understanding empowers organizations to personalize marketing campaigns, tailor product recommendations, and optimize customer service interactions, fostering stronger customer relationships and driving business success.",
+        "TargetAvailabilityDate": "Q1 - Currently available",
+        "GraphAlgorithmsList": [
+            "Cosine Similarity",
+            "Jaccard Similarity",
+            "Attribute-based Similarity (Exact Matching)",
+            "MinHash-based Similarity (Fuzzy Matching)",
+            "Weighted WCC (Full Graph)",
+            "Weighted WCC (Approximate)"
+        ],
+        "GraphFeaturesList": [
+            "Degree of connection to closest fraud customer",
+            "Path of connection to closest fraud customer",
+            "CC customer node count",
+            "Distinct count of each PII in CC",
+            "Count of nodes connected via each PII",
+            "Count of nodes only connected via each PII"
+        ],
+        "ROIDashboardMetricsList": [
+            "Need input from Product Team"
+        ],
+        "MLModelsList": [
+            ""
+        ],
+        "Sample CoPilot Questions": ""
+    },
+    {
+        "ApplicationID": "Product Recommendations",
+        "ApplicationDescription": "Product Recommendations helps businesses create a personalized shopping experience for their customers by analyzing complex relationships between products and customers.  Combined with TigerGraph's scalable and high-performance graph processing capabilities Product Recommendations provides insights enabling hyper-personalized product recommendations increasing sales and customer satisfaction, real-time product categorization and classification, automated product recommendation engines, real-time tracking and monitoring of customer behavior.  Product Recommendations helps TigerGraph customers create seamless shopping experiences driving customer loyalty and growth.",
+        "TargetAvailabilityDate": "Q1 - Currently available",
+        "GraphAlgorithmsList": [
+            "Jaccard Similarity",
+            "K-Means Clustering"
+        ],
+        "GraphFeaturesList": [
+            "Will need to research - do we have a list of questions we want to be answerable via ML Model?"
+        ],
+        "ROIDashboardMetricsList": [
+            "In design and could use input from Product Team"
+        ],
+        "MLModelsList": [
+            ""
+        ],
+        "Sample CoPilot Questions": ""
+    },
+    {
+        "ApplicationID": "Customer 360 (Jon)",
+        "ApplicationDescription": "Graph databases are pivotal for achieving a Customer 360 solution, unifying data from CRM systems, e-commerce, and support tickets into a cohesive whole. With 58% of business leaders struggling to meet customer experience expectations due to fragmented data, property graphs offer a comprehensive timeline of customer interactions by revealing relationships between diverse data points. This unified view helps resolve ambiguities, like entity resolution across acquisitions, while enabling organizations to deliver personalized, timely interactions that enhance satisfaction. For example, Optum reduced the time to generate a comprehensive customer timeline to less than 50 milliseconds using a graph database. This holistic understanding enables businesses to meet expectations efficiently, driving increased revenue by anticipating needs and creating higher-value relationships.",
+        "TargetAvailabilityDate": "Q3",
+        "GraphAlgorithmsList": [
+            "SImilarity algorithms",
+            "WCC",
+            "PageRank",
+            "Louvain"
+        ],
+        "GraphFeaturesList": [
+            "Not started"
+        ],
+        "ROIDashboardMetricsList": [
+            "Not started"
+        ],
+        "MLModelsList": [
+            ""
+        ],
+        "Sample CoPilot Questions": ""
+    },
+    {
+        "ApplicationID": "Rules",
+        "ApplicationDescription": "Can execute rules in graph to classify data instances. Additionally, can retrieve data instances based upon these rules.",
+        "TargetAvailabilityDate": "",
+        "GraphAlgorithmsList": [
+            "Concept traversal queries, both from a top-down (high-level concept -> data instance) and bottom-up (data instance -> all concepts it complies with)"
+        ],
+        "GraphFeaturesList": [
+            "N/A"
+        ],
+        "ROIDashboardMetricsList": [
+            ""
+        ],
+        "MLModelsList": [
+            "Could execute the decision tree directly in graph"
+        ],
+        "Sample CoPilot Questions": ""
+    },
+    {
+        "ApplicationID": "Motif (shape) Detection",
+        "ApplicationDescription": "Have GSQL queries that detect patterns of common fraudulent or money laundering patterns, etc.",
+        "TargetAvailabilityDate": "",
+        "GraphAlgorithmsList": [
+            "Custom logic"
+        ],
+        "GraphFeaturesList": [
+            "N/A"
+        ],
+        "ROIDashboardMetricsList": [
+            ""
+        ],
+        "MLModelsList": [
+            "N/A"
+        ],
+        "Sample CoPilot Questions": ""
+    },
+    {
+        "ApplicationID": "Anomaly Detection\n(example)",
+        "ApplicationDescription": "Detect trends and drastic changes in vertex connections, attribute values, etc. Can be helpful for fraud or AML, as well as digital twin use cases.",
+        "TargetAvailabilityDate": "",
+        "GraphAlgorithmsList": [
+            "None implemented to date. Lots of different approaches in academia"
+        ],
+        "GraphFeaturesList": [
+            "Binarized value of \"is anomaly\" or anomaly score"
+        ],
+        "ROIDashboardMetricsList": [
+            ""
+        ],
+        "MLModelsList": [
+            "Can be used alone as a prompt to a human to look at it, or as input into a ML model such as XGBoost"
+        ],
+        "Sample CoPilot Questions": ""
+    },
+    {
+        "ApplicationID": "Support Q&A",
+        "ApplicationDescription": "Load users own documents, build a knowledge graph from it, and perform hybrid graph+vector search to retrieve the right information in answer questions.",
+        "TargetAvailabilityDate": "",
+        "GraphAlgorithmsList": [
+            "Retrieval methods that combine vector search + graph traversal (overlap of multiple indices, etc.)"
+        ],
+        "GraphFeaturesList": [
+            "Text and graph content retrieved"
+        ],
+        "ROIDashboardMetricsList": [
+            ""
+        ],
+        "MLModelsList": [
+            "For use with LLM"
+        ],
+        "Sample CoPilot Questions": ""
+    },
+    {
+        "ApplicationID": "Products Q&A",
+        "ApplicationDescription": "Load users' product graph (or use existing product graph), extract documents from the text attributes of the relevant vertices (e.g., product descriptions) and build an associated knowledge graph. Optionally, convert numerical attributes of the vertices into vectors and index them into the vector DB. Finally,  perform hybrid graph+vector search retrieve the right information (vertices mainly) to answer questions.",
+        "TargetAvailabilityDate": "",
+        "GraphAlgorithmsList": [
+            "Retrieval methods that combine vector search + graph traversal (overlap of multiple indices, etc.)"
+        ],
+        "GraphFeaturesList": [
+            "Text and graph content retrieved"
+        ],
+        "ROIDashboardMetricsList": [
+            ""
+        ],
+        "MLModelsList": [
+            "For use with LLM"
+        ],
+        "Sample CoPilot Questions": ""
+    },
+    {
+        "ApplicationID": "Services Q&A",
+        "ApplicationDescription": "Load users' service graph (or use existing service graph), extract documents from the text attributes of the relevant vertices (e.g., service descriptions) and build an associated knowledge graph. Optionally, convert numerical attributes of the vertices into vectors and index them into the vector DB. Finally,  perform hybrid graph+vector search retrieve the right informationn (vertices mainly) to answer questions.",
+        "TargetAvailabilityDate": "",
+        "GraphAlgorithmsList": [
+            "Retrieval methods that combine vector search + graph traversal (overlap of multiple indices, etc.)"
+        ],
+        "GraphFeaturesList": [
+            "Text and graph content retrieved"
+        ],
+        "ROIDashboardMetricsList": [
+            ""
+        ],
+        "MLModelsList": [
+            "For use with LLM"
+        ],
+        "Sample CoPilot Questions": ""
+    }
+]

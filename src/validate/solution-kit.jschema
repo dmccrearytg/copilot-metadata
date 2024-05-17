@@ -1,0 +1,135 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "ApplicationID": {
+      "type": "string",
+      "description": "Unique identifier for the application."
+    },
+    "ApplicationName": {
+      "type": "string",
+      "description": "Human-readable name of the application.  It should be short and not include classifiers such as 'knowledge graph'."
+    },
+    "ApplicationDescription": {
+      "type": "string",
+      "description": "Detailed description of what the application does.  Focus on how the application is used to solve business problems"
+    },
+    "Owner": {
+      "type": "string",
+      "description": "Name of the owner or responsible party for the application."
+    },
+    "CurrentDevelopmentStatus": {
+      "type": "string",
+      "enum": [
+        "not-started",
+        "in-development",
+        "done"
+      ],
+      "description": "Current stage in the development lifecycle of the application."
+    },
+    "TargetAvailabilityDate": {
+      "type": "string",
+      "description": "The timeframe we would like this application to be available to our customers.  This is currently a freeform text."
+    },
+    "GraphAlgorithmsList": {
+      "type": "string",
+      "enum": [
+        "breadth-first-search",
+        "depth-first-search",
+        "dijkstra",
+        "bellman-ford",
+        "floyd-warshall",
+        "kruskal",
+        "prim",
+        "page-rank",
+        "louvain",
+        "cosine-similarity",
+        "a-star",
+        "boruvka",
+        "johnson",
+        "ford-fulkerson",
+        "edmonds-karp",
+        "tarjan",
+        "kosaraju",
+        "gabow",
+        "hierholzer",
+        "fleury",
+        "yens",
+        "suurballe",
+        "bron-kerbosch",
+        "hopcroft-karp",
+        "welsh-powell",
+        "greedy-coloring",
+        "eulerian-path",
+        "hamiltonian-cycle",
+        "topological-sort",
+        "strongly-connected-components"
+      ],
+      "description": "A list of the graph algorithms used in this solution kit separated by commas."
+    },
+    "GraphFeaturesList": {
+      "type": "string",
+      "description": "A list of the graph features used in this solution kit separated by commas.",
+      "enum": [
+        "Count of nodes connected via each PII",
+        "Count of nodes only connected via each PII",
+        "Community Size",
+        "Community Total Amount",
+        "Credit card customer node count",
+        "Credit card appplication node count",
+        "Degree of connection to closest fraud customer",
+        "Degree of connection to closest fraud app",
+        "Distinct count of each PII in CC",
+        "Fraudster count via shared device",
+        "Fraudster count via shared IP",
+        "MerCat Avg Off",
+        "Max Txn Cnt within interval",
+        "PageRank",
+        "Path of connection to closest fraud app",
+        "Path of connection to closest fraud customer",
+        "Ratio of mule account transfer to total amount",
+        "Repeated Card Count",
+        "Shortest Path Length",
+        "Weighted WCC"
+      ]
+    },
+    "ROIDashboardMetricsList": {
+      "type": "string",
+      "description": "A list of the graph algorithms used in this solution kit separated by commas.",
+      "enum": [
+        "% Increase Precision with Graph Features",
+        "% Increase Recall with Graph Features",
+        "$ Value More Fraud Applications Blocked",
+        "$ Value More Fraud Customers Blocked",
+        "$ Value More Fraud Transactions Blocked",
+        "$ Value More Legit Applications Allowed",
+        "$ Value More Legit Customers Allowed",
+        "$ Value More Legit Transactions Allowed",
+        "More Fraud Applications Blocked",
+        "More Fraud Customers Blocked",
+        "More Fraud Transactions Blocked",
+        "More Legit Application Allowed",
+        "More Legit AccountsAllowed",
+        "More Legit Customers Allowed",
+        "More Legit Transactions Allowed"
+      ]
+    },
+    "MLModelsList": {
+      "type": "string",
+      "description": "A list of the machine-learning models used in this solution kit separated by commas",
+      "enum": ["XGBoost"]
+    },
+    "Personas": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 0,
+      "description": "Optional. List of personas representing typical users of the application."
+    },
+    "Questions": {
+      "type": "array",
+      "maxItems": 900,
+      "minItems": 0,
+      "items": []
+    }
+  }
+}

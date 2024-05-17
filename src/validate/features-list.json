@@ -1,0 +1,22 @@
+[
+    "Count of nodes connected via each PII",
+    "Count of nodes only connected via each PII",
+    "Community Size",
+    "Community Total Amount",
+    "Credit card customer node count",
+    "Credit card appplication node count",
+    "Degree of connection to closest fraud customer",
+    "Degree of connection to closest fraud app",
+    "Distinct count of each PII in CC",
+    "Fraudster count via shared device",
+    "Fraudster count via shared IP",
+    "MerCat Avg Off",
+    "Max Txn Cnt within interval",
+    "PageRank",
+    "Path of connection to closest fraud app",
+    "Path of connection to closest fraud customer",
+    "Ratio of mule account transfer to total amount",
+    "Repeated Card Count",
+    "Shortest Path Length",
+    "Weighted WCC"
+]

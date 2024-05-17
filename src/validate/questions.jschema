@@ -1,0 +1,102 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Schema for an Application with nested Questions and Parameters",
+    "type": "object",
+    "properties": {
+        "Application": {
+            "type": "object",
+            "properties": {
+                "Questions": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "QuestionID": {
+                                "type": "string",
+                                "description": "Unique identifier for the question"
+                            },
+                            "QuestionText": {
+                                "type": "string",
+                                "description": "Text of the question"
+                            },
+                            "HasGSQLFunction": {
+                                "type": "string",
+                                "description": "Indicates if the parameter has an associated function",
+                                "enum": [
+                                    "true",
+                                    "false",
+                                    "unknown"
+                                ]
+                            },
+                            "GSQLFunctionID": {
+                                "type": "string",
+                                "description": "Identifier for the GSQL function associated with the question."
+                            },
+                            "QuestionPriority": {
+                                "type": "string",
+                                "enum": [
+                                    "critical",
+                                    "high",
+                                    "medium",
+                                    "low"
+                                ]
+                            },
+                            "Parameters": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "ParameterName": {
+                                            "type": "string",
+                                            "description": "Name of the parameter"
+                                        },
+                                        "ParameterType": {
+                                            "type": "string",
+                                            "description": "The data type of the parameter.  This list should be all possible GSQL attribute data types.",
+                                            "enum": [
+                                                "INT",
+                                                "UINT",
+                                                "FLOAT",
+                                                "DOUBLE",
+                                                "BOOL",
+                                                "STRING",
+                                                "DATETIME",
+                                                "FIXED_BINARY",
+                                                "LIST",
+                                                "SET",
+                                                "MAP"
+                                            ]
+                                        },
+                                        "IsComposable": {
+                                            "type": "string",
+                                            "description": "Indicates if the parameter can be composed using Boolean parameters.",
+                                            "enum": [
+                                                "true",
+                                                "false",
+                                                "unknown"
+                                            ]
+                                        }
+                                    },
+                                    "required": [
+                                        "ParameterName",
+                                        "ParameterType",
+                                        "IsComposable"
+                                    ]
+                                },
+                                "description": "List of parameters associated with the question"
+                            }
+                        },
+                        "required": [
+                            "QuestionID",
+                            "QuestionText",
+                            "Parameters"
+                        ]
+                    },
+                    "description": "Array of questions within the application"
+                }
+            },
+            "required": ["Questions"]
+        }
+    },
+    "required": ["Application"]
+}
