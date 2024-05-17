@@ -295,6 +295,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -540,7 +546,25 @@ you build conversational AI front-ends to TigerGraph.</p>
 <p>This site provides resources so you can create the necessary
 metadata to make your questions accurately map to functions
 and documents.</p>
-<p>For full documentation on CoPilot, you can go to the <a href="https://github.com/tigergraph/copilot">TigerGraph CoPilot GitHub Repository</a>.</p>
+<p>For full documentation on CoPilot, you can go to
+ the <a href="https://github.com/tigergraph/copilot">TigerGraph CoPilot GitHub Repository</a>.</p>
+<p>The CoPilot metadata architecture draws on many other standards including:</p>
+<ol>
+<li>SKOS</li>
+<li>SKOS-XL</li>
+<li>Dublin Core</li>
+<li>JSON</li>
+<li>JSON Schema</li>
+</ol>
+<p>Although we don't use RDF as an internal representation, we do
+ support tools that convert RDF into our internal labeled-property graph
+ data model.  </p>
+<p><img alt="" src="img/triple-to-lpg.png" /></p>
+<p>The following paper describes this process:</p>
+<p><a href="https://ceur-ws.org/Vol-3254/paper400.pdf">RDF2TG: Towards Supporting RDF in TigerGraph
+Property Graph Database System</a></p>
+<p>Note that the LPG allows attributes to be added to any relationship without reification.
+This prevents us from having to rewrite queries as new relationship attributes are created.</p>
 
 
 

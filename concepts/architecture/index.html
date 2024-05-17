@@ -12,25 +12,25 @@
         <meta name="author" content="Dan McCreary">
       
       
-        <link rel="canonical" href="https://dmccrearytg.github.io/copilot-metadata/generating-questions/">
+        <link rel="canonical" href="https://dmccrearytg.github.io/copilot-metadata/concepts/architecture/">
       
       
-        <link rel="prev" href="../generating-personas/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../questions/">
+        <link rel="next" href="../json-file-format/">
       
       
-      <link rel="icon" href="../img/favicon.ico">
+      <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
     
     
       
-        <title>Generating Questions - CoPilot Metadata</title>
+        <title>Metadata Architecture - CoPilot Metadata</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
       
       
 
@@ -49,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#generating-persona-questions" class="md-skip">
+        <a href="#copilot-architecture" class="md-skip">
           Skip to content
         </a>
       
@@ -84,9 +84,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="CoPilot Metadata" class="md-header__button md-logo" aria-label="CoPilot Metadata" data-md-component="logo">
+    <a href="../.." title="CoPilot Metadata" class="md-header__button md-logo" aria-label="CoPilot Metadata" data-md-component="logo">
       
-  <img src="../img/tg-logo-small.png" alt="logo">
+  <img src="../../img/tg-logo-small.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Generating Questions
+              Metadata Architecture
             
           </span>
         </div>
@@ -190,9 +190,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="CoPilot Metadata" class="md-nav__button md-logo" aria-label="CoPilot Metadata" data-md-component="logo">
+    <a href="../.." title="CoPilot Metadata" class="md-nav__button md-logo" aria-label="CoPilot Metadata" data-md-component="logo">
       
-  <img src="../img/tg-logo-small.png" alt="logo">
+  <img src="../../img/tg-logo-small.png" alt="logo">
 
     </a>
     CoPilot Metadata
@@ -219,7 +219,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -239,7 +239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
+      <a href="../../about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -259,7 +259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/" class="md-nav__link">
+      <a href="../../getting-started/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -276,6 +276,8 @@
       
   
   
+    
+  
   
   
     
@@ -297,29 +299,138 @@
     
     
       
-        
-        
-      
     
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
-  
-  
-    <a href="../concepts/" class="md-nav__link">
-      
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Concepts
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Concepts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
       
-        <span class="md-nav__icon md-icon"></span>
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
-    </a>
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Metadata Architecture
+  </span>
   
 
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../json-file-format/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metadata JSON File
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metadata-transformers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metadata Transformers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metadata-loaders/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metadata Loaders
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -332,7 +443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../generating-personas/" class="md-nav__link">
+      <a href="../../generating-personas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -349,30 +460,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Generating Questions
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../generating-questions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -381,44 +472,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#sample-prompt" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sample Prompt
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sample-program" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sample Program
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -475,7 +528,7 @@
         
   
   
-    <a href="../questions/" class="md-nav__link">
+    <a href="../../questions/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -501,7 +554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../document-data-model/" class="md-nav__link">
+      <a href="../../document-data-model/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -521,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../glossary/" class="md-nav__link">
+      <a href="../../glossary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -541,7 +594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contact/" class="md-nav__link">
+      <a href="../../contact/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -574,32 +627,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#sample-prompt" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sample Prompt
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sample-program" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sample Program
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -616,26 +643,10 @@
   
 
 
-<h1 id="generating-persona-questions">Generating Persona Questions</h1>
-<p>To generate a list of questions for each persona will need three items.</p>
-<ol>
-<li>The Application Name</li>
-<li>The Application Description</li>
-<li>The Persona Name</li>
-</ol>
-<h2 id="sample-prompt">Sample Prompt</h2>
-<div class="highlight"><pre><span></span><code>We have created a new web application product called {APPLICATION_NAME}.
-
-{APPLICATION_DESCRIPTION}
-
-For the persona {PERSONA}, what are the most common questions that this role
-would ask a chatbot?
-
-For each question, include the parameters to the question in square brackets: &quot;[&quot; and &quot;]&quot;.
-For example, use [geographic location] or [time period] if the question has location and time paraemters.
-Return the results in Markdown numbered list format.
-</code></pre></div>
-<h2 id="sample-program">Sample Program</h2>
+<h1 id="copilot-architecture">CoPilot Architecture</h1>
+<p>CoPilot architecture is described in the main GitHub repository:</p>
+<p><a href="https://github.com/tigergraph/copilot">https://github.com/tigergraph/copilot</a></p>
+<p>This document also focuses on CoPilot metadata and adding glossaries, taxonomies and ontologies to improve question coverage.</p>
 
 
 
@@ -671,7 +682,7 @@ Return the results in Markdown numbered list format.
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../generating-personas/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Generating Personas">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -681,20 +692,20 @@ Return the results in Markdown numbered list format.
                 Previous
               </span>
               <div class="md-ellipsis">
-                Generating Personas
+                Introduction
               </div>
             </div>
           </a>
         
         
           
-          <a href="../questions/" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction">
+          <a href="../json-file-format/" class="md-footer__link md-footer__link--next" aria-label="Next: Metadata JSON File">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Introduction
+                Metadata JSON File
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -728,10 +739,10 @@ Return the results in Markdown numbered list format.
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.a7c05c9e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
       
     
   </body>
