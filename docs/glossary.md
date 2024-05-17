@@ -61,6 +61,14 @@ Notes that provide historical context or track changes and developments related 
 
 The TigerGraph tools and frameworks that match questions to certified queries.
 
+#### JSON Solution Kit Metadata
+
+The file format used to store solution kit metadata.
+
+#### JSON Schema
+
+The file that describes the structure and definitions of Solution Kit metadata.
+
 #### Named Entity Resolution
 
 The process of identifying, disambiguating, and linking mentions of entities in text to unique identifiers, typically within a predefined set of entity vertices in a graph. This facilitates accurate analysis of relationships and interactions between entities across documents.
@@ -86,11 +94,23 @@ The recommended term to be used by default when referring to a concept or entity
 
 A type of directed edge in a graph indicates that understanding or knowledge of one concept vertex (the prerequisite) is necessary before another concept vertex can be fully understood.
 
+#### Personas
+
+A detailed representation of a hypothetical user based on user research and real data about similar users. Personas are used in business and software development to guide decisions about product features, navigation, interactions, and visual design by embodying the attributes, behaviors, goals, and motivations of different user segments.
+
+All questions are classified by the persona that might ask this question.
+
 #### Scope Notes
 
 Notes that clarify the boundaries and context of a concept or entity within the graph, including what is covered and what is excluded from the concept or entity definition.
 
-## TigerGraph CoPilot
+#### Startup Question
+
+Each persona has a list of startup questions that are displayed when that person starts a chat session.
+
+The metadata for each question has an indicator that is used to show the question is to be displayed.
+
+#### TigerGraph CoPilot
 
 The collective name for the generative AI tools used by TigerGraph to create conversational AI experiences and
 enable intelligent agents.
