@@ -57,6 +57,10 @@ and Concepts can then be grouped into categories to form Taxonomies.
 
 Notes that provide historical context or track changes and developments related to a concept or entity in the graph over time.
 
+#### InqueryAI
+
+The TigerGraph tools and frameworks that match questions to certified queries.
+
 #### Named Entity Resolution
 
 The process of identifying, disambiguating, and linking mentions of entities in text to unique identifiers, typically within a predefined set of entity vertices in a graph. This facilitates accurate analysis of relationships and interactions between entities across documents.
@@ -86,21 +90,30 @@ A type of directed edge in a graph indicates that understanding or knowledge of 
 
 Notes that clarify the boundaries and context of a concept or entity within the graph, including what is covered and what is excluded from the concept or entity definition.
 
+## TigerGraph CoPilot
+
+The collective name for the generative AI tools used by TigerGraph to create conversational AI experiences and
+enable intelligent agents.
+
 #### Top Level Concept
 
 The most general concept vertices in a graph are not subsumed by any broader concepts. These vertices often serve as primary categories or starting points for navigating the conceptual hierarchy of the graph.
 
-## CoPilot
+#### Solution Kit
 
+A TigerGraph predefined application designed specifically to showcase features of TigerGraph and CoPilot that differentiate our solution from other architectures.
 
-## InqueryAI
+#### SupportAI
 
-## Solution Kit
+The set of tools and libraries that enable TigerGraph to convert documents into graph format and link concepts into predefined
+business terminologies, glossaries, controlled vocabularies and ontologies.
 
-## SupportAI
+#### QueryAI
 
-## QueryAI
-
+The process of using generative AI to generate GSQL code with a focus on adding WHERE clauses to existing queries
+to narrow the result set.  Queries generated with these tools still must
+pass a rigorous human-centered certification process.  This is a developer tool and is not intended for
+non-GSQL staff.
 
 #### Reification
 
