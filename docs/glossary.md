@@ -1,5 +1,9 @@
 # CoPilot Metadata Glossary of Terms
 
+## Chat History
+
+## Chat Log
+
 ## Chunker
 
 ## Concept
@@ -13,6 +17,8 @@
 ## Entity
 
 ## InqueryAI
+
+## Solution Kit
 
 ## SupportAI
 

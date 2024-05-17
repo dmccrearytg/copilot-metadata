@@ -11,6 +11,9 @@ nav:
   - Home: index.md
   - About: about.md
   - Getting Started: getting-started.md
+  - Concepts:
+    - Introduction: concepts/index.md
+    - Metadata JSON File: concepts/json-file-format.md
   - Generating Personas: generating-personas.md
   - Generating Questions: generating-questions.md
   - Solution Kit Questions:
