@@ -392,9 +392,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#file-name" class="md-nav__link">
+  <a href="#file-name-standards" class="md-nav__link">
     <span class="md-ellipsis">
-      File Name
+      File Name Standards
     </span>
   </a>
   
@@ -404,6 +404,15 @@
   <a href="#schema-name-in-json-instance" class="md-nav__link">
     <span class="md-ellipsis">
       Schema Name In JSON Instance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binding-a-schema-to-a-json-file-within-the-oxygen-json-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binding a Schema to a JSON file within the oXygen JSON editor
     </span>
   </a>
   
@@ -429,6 +438,21 @@
       Required Fields
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Required Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-versioning-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schema Versioning Strategy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -656,9 +680,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#file-name" class="md-nav__link">
+  <a href="#file-name-standards" class="md-nav__link">
     <span class="md-ellipsis">
-      File Name
+      File Name Standards
     </span>
   </a>
   
@@ -668,6 +692,15 @@
   <a href="#schema-name-in-json-instance" class="md-nav__link">
     <span class="md-ellipsis">
       Schema Name In JSON Instance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binding-a-schema-to-a-json-file-within-the-oxygen-json-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binding a Schema to a JSON file within the oXygen JSON editor
     </span>
   </a>
   
@@ -694,6 +727,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Required Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-versioning-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schema Versioning Strategy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -716,12 +764,17 @@
 
 <h1 id="json-file-format">JSON File Format</h1>
 <p>We use JSON to store our Solution Kit metadata.
-We use JSON Schema to design and validate our solution kit metadata.</p>
+We use JSON Schema to design and validate our solution kit metadata.
+The JSON Schema is also used as an autocomplete tool within schema-aware text editors.</p>
 <h2 id="json-schema-standards">JSON Schema Standards</h2>
-<h3 id="file-name">File Name</h3>
+<h3 id="file-name-standards">File Name Standards</h3>
 <p>Tools will look in the main directory of each solution kit for the following file name:</p>
 <p><code>solution-kit-metadata.json</code></p>
-<p>The name of the JSON schema to validate the file is called <code>solution-kit-metadata.jschema</code>.</p>
+<p>The name of the JSON schema to validate the file is called <code>solution-kit-metadata.jschema</code>.
+Note that the file extension <code>.jschema</code> is used although the file format is also JSON.</p>
+<p>There should only be a single version of that <code>solution-kit-metadata.json</code> file in each solution kit.
+If the solution kit is shipped to a customer, the build tool should include both the metadata file
+and the schema file to a customer.</p>
 <h3 id="schema-name-in-json-instance">Schema Name In JSON Instance</h3>
 <p>To validate your file and use the auto-suggest functions of your JSON editor, you can specify the schema name as the first property of your file:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -740,7 +793,8 @@ We use JSON Schema to design and validate our solution kit metadata.</p>
 <span class="w">  </span><span class="nt">&quot;Owner&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span>
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p>You can also direct your JSON editor by using the "Red Check" icon on your toolbar:</p>
+<h3 id="binding-a-schema-to-a-json-file-within-the-oxygen-json-editor">Binding a Schema to a JSON file within the oXygen JSON editor</h3>
+<p>We can also direct the oXygen JSON editor by using the "Red Check" icon on your toolbar:</p>
 <p><img alt="" src="../../img/configure-validation.png" /></p>
 <h3 id="using-auto-complete">Using Auto-Complete</h3>
 <p>After you associate your JSON instance with the solution kit metadata schema you can enable
@@ -754,8 +808,11 @@ powerful validation and auto-complete features that suggest the next property or
 <li>ApplicationDescription - This is a full description of the application in a detailed paragraph format.</li>
 <li>CurrentDevelopmentStatus - the status of the solution kit: </li>
 <li>Owner - the owner of the solution kit</li>
-<li></li>
 </ol>
+<h3 id="schema-versioning-strategy">Schema Versioning Strategy</h3>
+<p>In the future, the schema may be versioned, and the version number may appear in the schema file name.  This implies that
+all files that reference the schema might need to be updated, so it should be done with caution.</p>
+<p>Note that if we ship a solution kit to the customer, the JSON Schema file should be included in the distribution.</p>
 
 
 
