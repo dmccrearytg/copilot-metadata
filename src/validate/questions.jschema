@@ -41,6 +41,21 @@
                                     "low"
                                 ]
                             },
+                            "Startup": {
+                                "type": "string",
+                                "enum": [
+                                    "true",
+                                    "false",
+                                    "unknown"
+                                ],
+                                "description": "Is this question shown on the startup screen for given persona."
+                            },
+                            "property": {
+                                "type": "array",
+                                "items": [],
+                                "minItems": 0,
+                                "maxItems": 10
+                            },
                             "Parameters": {
                                 "type": "array",
                                 "items": {
