@@ -19,6 +19,7 @@ nav:
     - Metadata Loaders: concepts/metadata-loaders.md
   - Generating Personas: generating-personas.md
   - Generating Questions: generating-questions.md
+  - Sample Personas: sample-personas.md
   - Solution Kit Questions:
     - Introduction: questions/index.md
     - Transaction Fraud: questions/transaction-fraud.md

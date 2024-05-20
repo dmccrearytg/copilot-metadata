@@ -17,7 +17,7 @@ Our goal is to allow each user to view their prior chat histories.
 
 A detailed record of a chat session, capturing the sequence of messages exchanged between participants. Chat logs are essential for auditing, troubleshooting, and understanding the context of a conversation.
 
-#### Data Linage
+#### Data Lineage
 
 
 
