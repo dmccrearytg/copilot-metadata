@@ -17,6 +17,10 @@ Our goal is to allow each user to view their prior chat histories.
 
 A detailed record of a chat session, capturing the sequence of messages exchanged between participants. Chat logs are essential for auditing, troubleshooting, and understanding the context of a conversation.
 
+#### Data Linage
+
+
+
 #### Document Chunk
 
 A segment of a document that has been separated from others based on structure, topic, or other relevant criteria. Chunks are used to simplify processing and enhance the analysis of large documents by focusing on manageable sections.
@@ -99,6 +103,12 @@ A type of directed edge in a graph indicates that understanding or knowledge of 
 A detailed representation of a hypothetical user based on user research and real data about similar users. Personas are used in business and software development to guide decisions about product features, navigation, interactions, and visual design by embodying the attributes, behaviors, goals, and motivations of different user segments.
 
 All questions are classified by the persona that might ask this question.
+
+#### Provenance
+
+ Information about entities, activities, and people involved in producing a piece of data or thing, which can be used to form assessments about its quality, reliability or trustworthiness.
+
+ * See also: Data Linage
 
 #### Scope Notes
 

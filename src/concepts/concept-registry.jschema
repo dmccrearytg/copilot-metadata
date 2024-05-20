@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Concept Registry",
+    "description": "A schema to validate a concept within a concept registry.  A concept is similar to the defintion use by the W3C SKOS Concept but we also track the linage of where Concepts came from.",
+    "type": "object",
+    "properties": {
+        "propertyName": {
+            "description": "The propertyName description",
+            "type": "string"
+        },
+        "Concept": {
+            "type": "object",
+            "properties": {
+                "ConceptID": {"type": "object"},
+                "ConceptPrefLabe": {"type": "string"},
+                "ConceptAltLabels": {"type": "array"},
+                "Linage": {"type": "object"}
+            }
+        }
+    }
+}

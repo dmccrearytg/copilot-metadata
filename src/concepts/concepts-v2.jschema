@@ -1,0 +1,60 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Schema title",
+    "description": "Description of the schema",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "ConceptID": {"type": "string"},
+            "ConceptPrefLabel": {
+                "type": "string",
+                "description": "The preferred label for this concept.  Only one peferred label is allowed per language.  The default is in English."
+            },
+            "ConceptAltLabels": {
+                "type": "array",
+                "description": "Althernate labels for this concept.",
+                "items": {"type": "string"}
+            },
+            "ConceptURIs": {
+                "type": "array",
+                "items": {"type": "string"}
+            },
+            "ConceptDefinition": {"type": "string"},
+            "ConceptComposability": {
+                "type": "string",
+                "enum": [
+                    "AND",
+                    "OR",
+                    "NOT",
+                    "SubConcept"
+                ]
+            },
+            "ConceptSource": {"type": "string"},
+            "ConceptApprovedDate": {
+                "type": "string",
+                "format": "date"
+            },
+            "ConceptApprovedBy": {
+                "type": "object",
+                "properties": {
+                    "Name": {"type": "string"},
+                    "Email": {
+                        "type": "string",
+                        "format": "email"
+                    }
+                },
+                "required": ["Name"]
+            }
+        },
+        "required": [
+            "ConceptID",
+            "ConceptPrefLabel",
+            "ConceptAltLabels",
+            "ConceptDefinition",
+            "ConceptSource",
+            "ConceptApprovedDate",
+            "ConceptApprovedBy"
+        ]
+    }
+}
