@@ -6,8 +6,10 @@
     "items": {
         "type": "object",
         "properties": {
-            "ConceptID": {"type": "string",
-            "description": "An ID associated with this concept.  In general concept IDs have the form 'C12345' and should be unique to this file.  You can also use UUIDs, GUIDs.  Put open linked data URI in the ConceptURI element."},
+            "ConceptID": {
+                "type": "string",
+                "description": "An ID associated with this concept.  In general concept IDs have the form 'C12345' and should be unique to this file.  You can also use UUIDs, GUIDs.  Put open linked data URI in the ConceptURI element."
+            },
             "ConceptPrefLabel": {
                 "type": "string",
                 "description": "The preferred label for this concept.  Only one peferred label is allowed per language.  The default is in English."
@@ -17,18 +19,18 @@
                 "description": "Althernate labels for this concept.",
                 "items": {"type": "string"}
             },
+            "ConceptDefinition": {
+                "type": "string",
+                "description": "A precise defintion of this concept used for similarity indexing.  Follow ISO 11179 guildlines for defitnions. Do not place examples of usage or business rules."
+            },
             "ConceptURI": {
                 "type": "array",
                 "description": "Universal Resource Identifier that can be used to compare concepts, match identail concepts (sameAs) and detect duplication.",
                 "items": {"type": "string"}
             },
-            "ConceptDefinition": {
-            "type": "string",
-             "description": "A precise defintion of this concept used for similarity indexing.  Follow ISO 11179 guildlines for defitnions. Do not place examples of usage or business rules."
-            },
             "ConceptExample": {
-            "type": "string",
-             "description": "A example of how a concept is used.  If the concept is PersonFullName the example would be 'John Smith'"
+                "type": "string",
+                "description": "A example of how a concept is used.  If the concept is PersonFullName the example would be 'John Smith'"
             },
             "ConceptComposability": {
                 "type": "string",
@@ -39,10 +41,18 @@
                     "SubConcept"
                 ]
             },
-            "ConceptSource": {"type": "string"},
+            "ConceptSource": {
+                "type": "string",
+                "description": "The source that this concepts was derived from.  Examples include added by a user, imported from a standard, derived using a generative AI process."
+            },
+            "ConceptSourceMethod": {
+                "type": "string",
+                "description": "The method that was used to generate this concept.  For example: Identified by SupportAI concept recognzer version 1.1"
+            },
             "ConceptApprovedDate": {
                 "type": "string",
-                "format": "date"
+                "format": "date",
+                "description": "The date and time this concept was approved as a valid concept."
             },
             "ConceptApprovedBy": {
                 "type": "object",
@@ -53,14 +63,14 @@
                         "format": "email"
                     }
                 },
-                "required": ["Name"]
+                "required": ["Name"],
+                "description": "The full name and email address of the person that approved the concept."
             }
         },
         "required": [
             "ConceptID",
             "ConceptPrefLabel",
-            "ConceptAltLabels",
-            "ConceptDefinition"
+            "ConceptAltLabels"
         ]
     }
 }
