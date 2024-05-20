@@ -1,21 +1,66 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Concept Registry",
-    "description": "A schema to validate a concept within a concept registry.  A concept is similar to the defintion use by the W3C SKOS Concept but we also track the linage of where Concepts came from.",
-    "type": "object",
-    "properties": {
-        "propertyName": {
-            "description": "The propertyName description",
-            "type": "string"
-        },
-        "Concept": {
-            "type": "object",
-            "properties": {
-                "ConceptID": {"type": "object"},
-                "ConceptPrefLabe": {"type": "string"},
-                "ConceptAltLabels": {"type": "array"},
-                "Linage": {"type": "object"}
+    "description": "A JSON schema to validate a concept within a concept registry.  A concept is similar to the defintion use by the W3C SKOS Concept but we also track the linage of where Concepts came from.",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "ConceptID": {"type": "string",
+            "description": "An ID associated with this concept.  In general concept IDs have the form 'C12345' and should be unique to this file.  You can also use UUIDs, GUIDs.  Put open linked data URI in the ConceptURI element."},
+            "ConceptPrefLabel": {
+                "type": "string",
+                "description": "The preferred label for this concept.  Only one peferred label is allowed per language.  The default is in English."
+            },
+            "ConceptAltLabels": {
+                "type": "array",
+                "description": "Althernate labels for this concept.",
+                "items": {"type": "string"}
+            },
+            "ConceptURI": {
+                "type": "array",
+                "description": "Universal Resource Identifier that can be used to compare concepts, match identail concepts (sameAs) and detect duplication.",
+                "items": {"type": "string"}
+            },
+            "ConceptDefinition": {
+            "type": "string",
+             "description": "A precise defintion of this concept used for similarity indexing.  Follow ISO 11179 guildlines for defitnions. Do not place examples of usage or business rules."
+            },
+            "ConceptExample": {
+            "type": "string",
+             "description": "A example of how a concept is used.  If the concept is PersonFullName the example would be 'John Smith'"
+            },
+            "ConceptComposability": {
+                "type": "string",
+                "enum": [
+                    "AND",
+                    "OR",
+                    "NOT",
+                    "SubConcept"
+                ]
+            },
+            "ConceptSource": {"type": "string"},
+            "ConceptApprovedDate": {
+                "type": "string",
+                "format": "date"
+            },
+            "ConceptApprovedBy": {
+                "type": "object",
+                "properties": {
+                    "PersonFullName": {"type": "string"},
+                    "Email": {
+                        "type": "string",
+                        "format": "email"
+                    }
+                },
+                "required": ["Name"]
             }
-        }
+        },
+        "required": [
+            "ConceptID",
+            "ConceptPrefLabel",
+            "ConceptAltLabels",
+            "ConceptDefinition"
+        ]
     }
 }
