@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Application",
+  "description": "Schema for an Application containing questions",
+  "type": "object",
+  "properties": {
+    "ApplicationID": {
+      "type": "string",
+      "description": "The unique identifier for an application"
+    },
+    "ApplicationName": {
+      "type": "string",
+      "description": "The name of the application"
+    },
+    "Questions": {
+      "type": "array",
+      "description": "A list of questions related to the application.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "QuestionID": {
+            "type": "string",
+            "description": "The unique identifier for a question"
+          },
+          "QuestionText": {
+            "type": "string",
+            "description": "The text of the question"
+          },
+          "QuestionStatus": {
+            "type": "string",
+            "description": "The status of the question",
+            "enum": ["no-match", "query-working"]
+          },
+          "FunctionID": {
+            "type": "string",
+            "description": "The identifier of the function associated with the question"
+          }
+        },
+        "required": ["QuestionID", "QuestionText", "QuestionStatus", "FunctionID"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["ApplicationID", "ApplicationName", "Questions"],
+  "additionalProperties": false
+}

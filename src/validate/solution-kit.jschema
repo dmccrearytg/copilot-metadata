@@ -127,9 +127,57 @@
     },
     "Questions": {
       "type": "array",
-      "maxItems": 900,
-      "minItems": 0,
-      "items": []
-    }
+      "description": "A list of questions related to the application.",
+      "items": {
+        "type": "object",
+        "properties": {
+              "QuestionID": {
+                "type": "string",
+                "description": "The unique identifier for a question"
+              },
+              "QuestionText": {
+                "type": "string",
+                "description": "The text of the question"
+              },
+              "Persona": {
+                "type": "string",
+                "description": "The persona associated with this question.  A question can be associated with multiple questions.  Use a commma separted list of there are multiple personas."
+              },
+              "HasGSQLFunction": {
+                "type": "string",
+                "description": "Indicates if the parameter has an associated function",
+                "enum": [
+                    "true",
+                    "false",
+                    "unknown"
+                ]
+            },
+            "GSQLFunctionID": {
+                "type": "string",
+                "description": "Identifier for the GSQL function associated with the question."
+            },
+            "QuestionPriority": {
+                "type": "string",
+                "enum": [
+                    "critical",
+                    "high",
+                    "medium",
+                    "low"
+                ]
+            },
+            "Startup": {
+                "type": "string",
+                "description": "Is this question visible in the chat startup window?  There should be about four per persona.",
+                "enum": [
+                    "true",
+                    "false",
+                    "unknown"
+                ]
+            }
+        }
+        },
+        "required": ["QuestionID", "QuestionText", "QuestionStatus", "FunctionID"],
+        "additionalProperties": false
+      }
   }
 }
