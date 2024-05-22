@@ -24,7 +24,7 @@ and the schema file to a customer.
 
 To validate your file and use the auto-suggest functions of your JSON editor, you can specify the schema name as the first property of your file:
 
-#### Simple JSON
+#### Simple Solution Kit Metadata JSON
 
 ```json
 {
@@ -36,6 +36,8 @@ To validate your file and use the auto-suggest functions of your JSON editor, yo
   "Owner": "John Doe"
 }
 ```
+
+#### JSON with Questions
 
 ```json
 {
