@@ -1,8 +1,9 @@
 # JSON File Format
 
-We use JSON to store our Solution Kit metadata.
-We use JSON Schema to design and validate our solution kit metadata.
-The JSON Schema is also used as an autocomplete tool within schema-aware text editors.
+We use JSON files to store our Solution Kit metadata.
+We use [JSON Schema](https://json-schema.org/) to design and validate our solution kit metadata.
+The JSON Schema file can also used as an autocomplete tool within schema-aware text editors.
+We have also separated CoPilot Concepts information into a separate JSON file.
 
 ## JSON Schema Standards
 
