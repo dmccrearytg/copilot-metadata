@@ -434,6 +434,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Schema Name In JSON Instance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simple JSON
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -804,6 +819,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Schema Name In JSON Instance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simple JSON
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -887,6 +917,7 @@ If the solution kit is shipped to a customer, the build tool should include both
 and the schema file to a customer.</p>
 <h3 id="schema-name-in-json-instance">Schema Name In JSON Instance</h3>
 <p>To validate your file and use the auto-suggest functions of your JSON editor, you can specify the schema name as the first property of your file:</p>
+<h4 id="simple-json">Simple JSON</h4>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -895,12 +926,64 @@ and the schema file to a customer.</p>
 <span class="normal">6</span>
 <span class="normal">7</span>
 <span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;solution-kit-schema.json&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;solution-kit.jschema&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;ApplicationID&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;customer-360&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;ApplicationName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Customer 360&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;ApplicationDescription&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A program that tracks all the touchpoints for a customer.&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;CurrentDevelopmentStatus&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;in-development&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;Owner&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;solution-kit.jschema&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ApplicationID&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;transaction-fraud &quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ApplicationName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Transaction Fraud&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ApplicationDescription&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Credit card transaction fraud detection identifies and prevents unauthorized or deceptive transactions in real-time. It analyzes transaction data, including cardholder information, transaction details, and historical patterns, to detect anomalies and suspicious activity indicative of fraud.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;Owner&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Sue Johnson&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;CurrentDevelopmentStatus&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;done&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;TargetAvailabilityDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;June 2024&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;GraphAlgorithmsList&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;page-rank&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;GraphFeaturesList&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Count of nodes connected via each PII&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;ROIDashboardMetricsList&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;% Increase Precision with Graph Features&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;MLModelsList&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;XGBoost&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;Personas&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;fraud-investigator&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;Questions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span><span class="nt">&quot;QuestionID&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Q1&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">        </span><span class="nt">&quot;QuestionText&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;What are the open cases assinged to me?&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">        </span><span class="nt">&quot;Persona&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;fraud-invdstigator&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;HasGSQLFunction&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;true&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;GSQLFunctionID&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;get-open-cases($personID)&quot;</span><span class="p">},</span>
+<span class="w">         </span><span class="p">{</span><span class="nt">&quot;QuestionID&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Q2&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">        </span><span class="nt">&quot;QuestionText&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;How many SARs are open in California?&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">        </span><span class="nt">&quot;Persona&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;fraud-invdstigator&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;HasGSQLFunction&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;true&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;GSQLFunctionID&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;get-sars-in-region($region)&quot;</span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <h3 id="binding-a-schema-to-a-json-file-within-the-oxygen-json-editor">Binding a Schema to a JSON file within the oXygen JSON editor</h3>
