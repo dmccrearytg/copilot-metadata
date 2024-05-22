@@ -32,45 +32,50 @@
       "description": "The timeframe we would like this application to be available to our customers.  This is currently a freeform text."
     },
     "GraphAlgorithmsList": {
-      "type": "string",
-      "enum": [
-        "breadth-first-search",
-        "depth-first-search",
-        "dijkstra",
-        "bellman-ford",
-        "floyd-warshall",
-        "kruskal",
-        "prim",
-        "page-rank",
-        "louvain",
-        "cosine-similarity",
-        "a-star",
-        "boruvka",
-        "johnson",
-        "ford-fulkerson",
-        "edmonds-karp",
-        "tarjan",
-        "kosaraju",
-        "gabow",
-        "hierholzer",
-        "fleury",
-        "yens",
-        "suurballe",
-        "bron-kerbosch",
-        "hopcroft-karp",
-        "welsh-powell",
-        "greedy-coloring",
-        "eulerian-path",
-        "hamiltonian-cycle",
-        "topological-sort",
-        "strongly-connected-components"
-      ],
-      "description": "A list of the graph algorithms used in this solution kit separated by commas."
+      "type": "array",
+      "description": "A list of the graph algorithms used in this solution kit.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "breadth-first-search",
+          "depth-first-search",
+          "dijkstra",
+          "bellman-ford",
+          "floyd-warshall",
+          "kruskal",
+          "prim",
+          "page-rank",
+          "louvain",
+          "cosine-similarity",
+          "a-star",
+          "boruvka",
+          "johnson",
+          "ford-fulkerson",
+          "edmonds-karp",
+          "tarjan",
+          "kosaraju",
+          "gabow",
+          "hierholzer",
+          "fleury",
+          "yens",
+          "suurballe",
+          "bron-kerbosch",
+          "hopcroft-karp",
+          "welsh-powell",
+          "greedy-coloring",
+          "eulerian-path",
+          "hamiltonian-cycle",
+          "topological-sort",
+          "strongly-connected-components"
+      ]
+      }
     },
     "GraphFeaturesList": {
-      "type": "string",
+      "type": "array",
       "description": "A list of the graph features used in this solution kit separated by commas.",
-      "enum": [
+      "items": {
+        "type": "string",
+        "enum": [
         "Count of nodes connected via each PII",
         "Count of nodes only connected via each PII",
         "Community Size",
@@ -92,11 +97,14 @@
         "Shortest Path Length",
         "Weighted WCC"
       ]
+    }
     },
     "ROIDashboardMetricsList": {
-      "type": "string",
+      "type": "array",
       "description": "A list of the graph algorithms used in this solution kit separated by commas.",
-      "enum": [
+      "items": {
+        "type": "string",
+        "enum": [
         "% Increase Precision with Graph Features",
         "% Increase Recall with Graph Features",
         "$ Value More Fraud Applications Blocked",
@@ -113,17 +121,20 @@
         "More Legit Customers Allowed",
         "More Legit Transactions Allowed"
       ]
+    }
     },
     "MLModelsList": {
-      "type": "string",
+      "type": "array",
       "description": "A list of the machine-learning models used in this solution kit separated by commas",
-      "enum": ["XGBoost"]
+       "items": {
+        "type": "string",
+        "enum": ["XGBoost"]
+    }
     },
     "Personas": {
       "type": "array",
-      "items": {"type": "string"},
-      "minItems": 0,
-      "description": "Optional. List of personas representing typical users of the application."
+      "description": "Optional. List of personas representing typical users of the application.",
+      "items": {"type": "string"}      
     },
     "Questions": {
       "type": "array",

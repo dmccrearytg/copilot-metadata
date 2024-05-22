@@ -1,0 +1,26 @@
+{
+    "$schema": "solution-kit.jschema",
+    "ApplicationID": "transaction-fraud ",
+    "ApplicationName": "Transaction Fraud",
+    "ApplicationDescription": "Credit card transaction fraud detection identifies and prevents unauthorized or deceptive transactions in real-time. It analyzes transaction data, including cardholder information, transaction details, and historical patterns, to detect anomalies and suspicious activity indicative of fraud.",
+    "Owner": "Robert",
+    "CurrentDevelopmentStatus": "done",
+    "TargetAvailabilityDate": "June 2024",
+    "GraphAlgorithmsList": "page-rank",
+    "GraphFeaturesList": "Count of nodes connected via each PII",
+    "ROIDashboardMetricsList": "% Increase Precision with Graph Features",
+    "MLModelsList": "XGBoost",
+    "Personas": ['fraud-investigator'],
+    "Questions": [
+        {"QuestionID": "Q1", 
+        "QuestionText": "What are the open cases assinged to me?", 
+        "Persona": "fraud-invdstigator",
+        "HasGSQLFunction": "true",
+        "GSQLFunctionID": "get-open-cases($personID)"},
+         {"QuestionID": "Q2", 
+        "QuestionText": "How many SARs are open in California?", 
+        "Persona": "fraud-invdstigator",
+        "HasGSQLFunction": "true",
+        "GSQLFunctionID": "get-sars-in-region($region)"}
+    ]
+}

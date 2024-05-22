@@ -24,15 +24,45 @@ and the schema file to a customer.
 
 To validate your file and use the auto-suggest functions of your JSON editor, you can specify the schema name as the first property of your file:
 
+#### Simple JSON
 
 ```json
 {
-  "$schema": "solution-kit-schema.json",
+  "$schema": "solution-kit.jschema",
   "ApplicationID": "customer-360",
   "ApplicationName": "Customer 360",
   "ApplicationDescription": "A program that tracks all the touchpoints for a customer.",
   "CurrentDevelopmentStatus": "in-development",
   "Owner": "John Doe"
+}
+```
+
+```json
+{
+    "$schema": "solution-kit.jschema",
+    "ApplicationID": "transaction-fraud ",
+    "ApplicationName": "Transaction Fraud",
+    "ApplicationDescription": "Credit card transaction fraud detection identifies and prevents unauthorized or deceptive transactions in real-time. It analyzes transaction data, including cardholder information, transaction details, and historical patterns, to detect anomalies and suspicious activity indicative of fraud.",
+    "Owner": "Sue Johnson",
+    "CurrentDevelopmentStatus": "done",
+    "TargetAvailabilityDate": "June 2024",
+    "GraphAlgorithmsList": ["page-rank"],
+    "GraphFeaturesList": ["Count of nodes connected via each PII"],
+    "ROIDashboardMetricsList": ["% Increase Precision with Graph Features"],
+    "MLModelsList": ["XGBoost"],
+    "Personas": ["fraud-investigator"],
+    "Questions": [
+        {"QuestionID": "Q1", 
+        "QuestionText": "What are the open cases assinged to me?", 
+        "Persona": "fraud-invdstigator",
+        "HasGSQLFunction": "true",
+        "GSQLFunctionID": "get-open-cases($personID)"},
+         {"QuestionID": "Q2", 
+        "QuestionText": "How many SARs are open in California?", 
+        "Persona": "fraud-invdstigator",
+        "HasGSQLFunction": "true",
+        "GSQLFunctionID": "get-sars-in-region($region)"}
+    ]
 }
 ```
 

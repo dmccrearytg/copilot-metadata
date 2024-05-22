@@ -1,0 +1,14 @@
+{
+    "ApplicationID": "ApplicationID",
+    "ApplicationName": "ApplicationName",
+    "ApplicationDescription": "ApplicationDescription",
+    "Owner": "Owner",
+    "CurrentDevelopmentStatus": "not-started",
+    "TargetAvailabilityDate": "TargetAvailabilityDate",
+    "GraphAlgorithmsList": "breadth-first-search",
+    "GraphFeaturesList": "Count of nodes connected via each PII",
+    "ROIDashboardMetricsList": "% Increase Precision with Graph Features",
+    "MLModelsList": "XGBoost",
+    "Personas": [],
+    "Questions": {}
+}
