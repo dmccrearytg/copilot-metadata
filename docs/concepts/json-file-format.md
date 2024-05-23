@@ -55,12 +55,12 @@ To validate your file and use the auto-suggest functions of your JSON editor, yo
     "Personas": ["fraud-investigator"],
     "Questions": [
         {"QuestionID": "Q1", 
-        "QuestionText": "What are the open cases assinged to me?", 
+        "QuestionText": "What are the open cases assinged to [personid]?", 
         "Persona": "fraud-invdstigator",
         "HasGSQLFunction": "true",
         "GSQLFunctionID": "get-open-cases($personID)"},
          {"QuestionID": "Q2", 
-        "QuestionText": "How many SARs are open in California?", 
+        "QuestionText": "How many SARs are open in [region]", 
         "Persona": "fraud-invdstigator",
         "HasGSQLFunction": "true",
         "GSQLFunctionID": "get-sars-in-region($region)"}
@@ -86,11 +86,12 @@ powerful validation and auto-complete features that suggest the next property or
 
 The following fields are required by a solution kit metadata file:
 
-1. ApplicationID - This ID should match the directory name and be all lower-case and dashes.  Avoid duplicate ids.
-2. ApplicationName - The name of the Solution Kit application such as "Customer 360".  You are encouraged to use title case and spaces.
-3. ApplicationDescription - This is a full description of the application in a detailed paragraph format.
-4. CurrentDevelopmentStatus - the status of the solution kit: 
-4. Owner - the owner of the solution kit
+1. **ApplicationID** - This ID should match the directory name and be all lower-case and dashes.  Avoid duplicate ids.  There are currently no checks for this now.
+2. **ApplicationName** - The name of the Solution Kit application such as "Customer 360".  You are encouraged to use title case and spaces.
+3. **ApplicationDescription** - This is a full-text description of the application in a detailed paragraph format.
+4. **CurrentDevelopmentStatus** - The status of the solution kit: 
+4. **Owner** - The full name of the owner of the solution kit.  This is for informational use right now and we don't trigger
+any events and send e-mails on this field yet, but we could add that also.
 
 ### Schema Versioning Strategy
 
