@@ -17,7 +17,7 @@
 1. Data Scientist
 1. Operations Manager Questions Prompt
 
-## Financial c36
+## Financial c360
 1. Banking Consultant
 1. Customer Service Representative 
 1. Banking Consultant 
