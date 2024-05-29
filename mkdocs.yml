@@ -17,6 +17,7 @@ nav:
     - Metadata JSON File: concepts/json-file-format.md
     - Metadata Transformers: concepts/metadata-transformers.md
     - Metadata Loaders: concepts/metadata-loaders.md
+    - Glossary Terms: concepts/glossary-terms.md
   - Generating Personas: generating-personas.md
   - Generating Questions: generating-questions.md
   - Sample Personas: sample-personas.md

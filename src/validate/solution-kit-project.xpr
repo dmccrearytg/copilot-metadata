@@ -14,6 +14,8 @@
         </options>
     </meta>
     <projectTree name="solution-kit-project.xpr">
+        <folder path="../concepts/"/>
+        <folder path="../transform/"/>
         <folder path="."/>
     </projectTree>
 </project>

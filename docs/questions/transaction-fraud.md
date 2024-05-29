@@ -2,8 +2,8 @@
 
 ## Application Description
 
-Credit card transaction fraud detection identifies and prevents unauthorized or deceptive transactions in real-time. 
-It analyzes transaction data, including cardholder information, transaction details, and historical patterns, to detect anomalies and suspicious activity indicative of fraud. TigerGraph models complex relationships and patterns among entities such as cardholders, merchants, transactions, and geographic locations. This enable detection of fraudulent networks and patterns that may be difficult to uncover using traditional relational databases. Using graph algorithms enables organizations to detect and respond to fraudulent transactions quickly and efficiently, ultimately reducing financial losses and protecting consumers from fraudulent activity.
+Credit card transaction fraud detection identifies and prevents unauthorized or deceptive transactions in real time. 
+It analyzes transaction data, including cardholder information, transaction details, and historical patterns, to detect anomalies and suspicious activity indicative of fraud. TigerGraph models complex relationships and patterns among entities such as cardholders, merchants, transactions, and geographic locations. This enables the detection of fraudulent networks and patterns that may be difficult to uncover using traditional relational databases. Using graph algorithms enables organizations to detect and respond to fraudulent transactions quickly and efficiently, ultimately reducing financial losses and protecting consumers from fraudulent activity.
 
 ## List of Personas
 

@@ -1,0 +1,19 @@
+[
+    {
+        "$schema": "concept-registry.jschema",
+        "ConceptID": "ConceptID",
+        "ConceptPrefLabel": "ConceptPrefLabel",
+        "ConceptAltLabels": ["ConceptAltLabels0"],
+        "ConceptDefinition": "ConceptDefinition",
+        "ConceptURI": ["ConceptURI0"],
+        "ConceptExample": "ConceptExample",
+        "ConceptComposability": "AND",
+        "ConceptSource": "ConceptSource",
+        "ConceptSourceMethod": "ConceptSourceMethod",
+        "ConceptApprovedDate": "2000-01-01",
+        "ConceptApprovedBy": {
+            "PersonFullName": "PersonFullName",
+            "Email": "example@domain.com"
+        }
+    }
+]
