@@ -17,9 +17,13 @@ Our goal is to allow each user to view their prior chat histories.
 
 A detailed record of a chat session, capturing the sequence of messages exchanged between participants. Chat logs are essential for auditing, troubleshooting, and understanding the context of a conversation.
 
+Note that Chat Logs are records of question-answer pairs with timestamps that are visible to all analysis for all users.
+
 #### Data Lineage
 
+The systematic tracking and documentation of the origin, processing, transformation, and movement of data throughout its entire lifecycle, from creation to consumption. 
 
+Data linage involves tracing the history of data, including its sources, transformations, and transformations, to provide transparency, accountability, and trust in the data's accuracy, completeness, and integrity.
 
 #### Document Chunk
 
