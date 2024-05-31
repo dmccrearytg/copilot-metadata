@@ -1,8 +1,11 @@
 # CoPilot Metadata Glossary of Terms
 
+This document contains a list of terms we use in the CoPilot project.  We draw on
+many sources for CoPilot including the fields of semantics, knowledge representation, large-language models, machine learning and natural-language processing (NLP).
+
 #### Alternate Label
 
-Secondary or alternative terms used to refer to a concept or entity in a graph. These labels include synonyms, abbreviations, or other variations that are recognized but less preferred than the primary label.
+Secondary or alternative terms are used to refer to a concept or entity in a graph. These labels include synonyms, abbreviations, or other variations that are recognized but less preferred than the primary label.
 
 #### Broader Concept Relationship
 
@@ -17,21 +20,7 @@ Our goal is to allow each user to view their prior chat histories.
 
 A detailed record of a chat session, capturing the sequence of messages exchanged between participants. Chat logs are essential for auditing, troubleshooting, and understanding the context of a conversation.
 
-Note that Chat Logs are records of question-answer pairs with timestamps that are visible to all analysis for all users.
-
-#### Data Lineage
-
-The systematic tracking and documentation of the origin, processing, transformation, and movement of data throughout its entire lifecycle, from creation to consumption. 
-
-Data linage involves tracing the history of data, including its sources, transformations, and transformations, to provide transparency, accountability, and trust in the data's accuracy, completeness, and integrity.
-
-#### Document Chunk
-
-A segment of a document that has been separated from others based on structure, topic, or other relevant criteria. Chunks are used to simplify processing and enhance the analysis of large documents by focusing on manageable sections.
-
-#### Document Chunker
-
-A tool or process that divides documents into smaller, more manageable pieces or chunks based on predefined rules or algorithms. This facilitates more detailed and efficient analysis of the content by treating each chunk as a separate unit for processing.
+Note that Chat Logs are records of question-answer pairs with timestamps that are visible to all analyses for all users.
 
 #### ConceptRelationship
 
@@ -40,6 +29,31 @@ A general term for any type of directed or undirected edge in a graph that repre
 #### Concept Vertex Type
 
 A type of vertex in a graph that represents a general idea or category derived from the content of documents. Concept vertices are used to categorize and connect related entities and documents based on shared themes or topics.
+
+Within TigerGraph CoPilot, a Concept Vertex Type has attributes for preferred labels, alternate labels, defintion, and history notes.
+
+#### CoPilot
+
+* See: [TigerGraph CoPilot](#tigergraph-copilot)
+
+#### Data Lineage
+
+The systematic tracking and documentation of the origin, processing, transformation, and movement of data throughout its entire lifecycle, from creation to consumption.
+
+Data lineage involves tracing the history of data, including its sources, transformations, and transformations, to provide transparency, accountability, and trust in the data's accuracy, completeness, and integrity.
+
+One feature that CoPilot can do is provide an "Info" button that shows details of how a question was
+answered and if the answer came from a document, how the document traveled in it journey into CoPilot.
+
+* See Also: [Provenance](#provenance)
+
+#### Document Chunk
+
+A segment of a document that has been separated from others based on structure, topic, or other relevant criteria. Chunks are used to simplify processing and enhance the analysis of large documents by focusing on manageable sections.
+
+#### Document Chunker
+
+A tool or process that divides documents into smaller, more manageable pieces or chunks based on predefined rules or algorithms. This facilitates a more detailed and efficient analysis of the content by treating each chunk as a separate unit for processing.
 
 #### Definition
 
@@ -64,6 +78,8 @@ and Concepts can then be grouped into categories to form Taxonomies.
 #### History Notes
 
 Notes that provide historical context or track changes and developments related to a concept or entity in the graph over time.
+
+History Notes are represented as a text attribute associated with a [Concept Vertex Type](#concept-vertex-type)
 
 #### InqueryAI
 
@@ -126,8 +142,7 @@ The metadata for each question has an indicator that is used to show the questio
 
 #### TigerGraph CoPilot
 
-The collective name for the generative AI tools used by TigerGraph to create conversational AI experiences and
-enable intelligent agents.
+The collective name for the generative AI tools used by TigerGraph to integrate LLMs, vector stores and create conversational AI experiences and enable intelligent agents.
 
 #### Top Level Concept
 
