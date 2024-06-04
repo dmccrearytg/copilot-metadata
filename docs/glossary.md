@@ -13,18 +13,31 @@ A type of directed edge in a graph where one concept vertex (the broader) encomp
 
 #### Chat History (User)
 
-A collection of all prior questions and answers in a session created by a user.
-Our goal is to allow each user to view their prior chat histories.
+A collection of all prior questions and answers for a given session created by a user.
 
-#### Chat Log
+Our goal is to allow each user to view their prior chat histories on a session-by-session basis.
 
-A detailed record of a chat session, capturing the sequence of messages exchanged between participants. Chat logs are essential for auditing, troubleshooting, and understanding the context of a conversation.
+For example, a fraud investigator might have 10 tabs open for each investigation they are doing.  Each tab would include
+the question and answer pairs for that investigation, but the question-answer pairs are never intermixed between sessions for a given user.
+
+#### Chat Log (System)
+
+A detailed record of a chat question and answers for all sessions for all users of the system.  Chat logs capture the sequence of messages exchanged between participants. Chat logs are essential for auditing, troubleshooting, and understanding the context of a conversation.
 
 Note that Chat Logs are records of question-answer pairs with timestamps that are visible to all analyses for all users.
+They are different from a [Chat History](#chat-history-user) which is a report that shows ONLY the
+chat logs for a specific user.
 
-#### ConceptRelationship
+#### Chat Session
 
-A general term for any type of directed or undirected edge in a graph that represents a relationship between two concept vertices. These relationships are used to illustrate the semantic connections between different concepts.
+A specific set of questions and answers requested by a user of a chatbot within a specific user interface such as a tab in a web browser.
+
+All questions and answer pairs are kept together for chat history reporting.
+There are no limits to the number of chat sessions that a specific user can run concurrently.
+
+#### Concept Relationship
+
+A general term for any type of directed or undirected edge in a graph that represents a relationship between two [Concept](#concept-vertex-type) vertices. These relationships are used to illustrate the semantic connections between different concepts.
 
 #### Concept Vertex Type
 
