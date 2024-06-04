@@ -578,18 +578,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#chat-log" class="md-nav__link">
+  <a href="#chat-log-system" class="md-nav__link">
     <span class="md-ellipsis">
-      Chat Log
+      Chat Log (System)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conceptrelationship" class="md-nav__link">
+  <a href="#chat-session" class="md-nav__link">
     <span class="md-ellipsis">
-      ConceptRelationship
+      Chat Session
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concept-relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concept Relationship
     </span>
   </a>
   
@@ -938,18 +947,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#chat-log" class="md-nav__link">
+  <a href="#chat-log-system" class="md-nav__link">
     <span class="md-ellipsis">
-      Chat Log
+      Chat Log (System)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conceptrelationship" class="md-nav__link">
+  <a href="#chat-session" class="md-nav__link">
     <span class="md-ellipsis">
-      ConceptRelationship
+      Chat Session
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concept-relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concept Relationship
     </span>
   </a>
   
@@ -1242,13 +1260,21 @@ many sources for CoPilot including the fields of semantics, knowledge representa
 <h4 id="broader-concept-relationship">Broader Concept Relationship</h4>
 <p>A type of directed edge in a graph where one concept vertex (the broader) encompasses or is more general than another concept vertex (the narrower). This relationship is used to build hierarchical structures within the graph.</p>
 <h4 id="chat-history-user">Chat History (User)</h4>
-<p>A collection of all prior questions and answers in a session created by a user.
-Our goal is to allow each user to view their prior chat histories.</p>
-<h4 id="chat-log">Chat Log</h4>
-<p>A detailed record of a chat session, capturing the sequence of messages exchanged between participants. Chat logs are essential for auditing, troubleshooting, and understanding the context of a conversation.</p>
-<p>Note that Chat Logs are records of question-answer pairs with timestamps that are visible to all analyses for all users.</p>
-<h4 id="conceptrelationship">ConceptRelationship</h4>
-<p>A general term for any type of directed or undirected edge in a graph that represents a relationship between two concept vertices. These relationships are used to illustrate the semantic connections between different concepts.</p>
+<p>A collection of all prior questions and answers for a given session created by a user.</p>
+<p>Our goal is to allow each user to view their prior chat histories on a session-by-session basis.</p>
+<p>For example, a fraud investigator might have 10 tabs open for each investigation they are doing.  Each tab would include
+the question and answer pairs for that investigation, but the question-answer pairs are never intermixed between sessions for a given user.</p>
+<h4 id="chat-log-system">Chat Log (System)</h4>
+<p>A detailed record of a chat question and answers for all sessions for all users of the system.  Chat logs capture the sequence of messages exchanged between participants. Chat logs are essential for auditing, troubleshooting, and understanding the context of a conversation.</p>
+<p>Note that Chat Logs are records of question-answer pairs with timestamps that are visible to all analyses for all users.
+They are different from a <a href="#chat-history-user">Chat History</a> which is a report that shows ONLY the
+chat logs for a specific user.</p>
+<h4 id="chat-session">Chat Session</h4>
+<p>A specific set of questions and answers requested by a user of a chatbot within a specific user interface such as a tab in a web browser.</p>
+<p>All questions and answer pairs are kept together for chat history reporting.
+There are no limits to the number of chat sessions that a specific user can run concurrently.</p>
+<h4 id="concept-relationship">Concept Relationship</h4>
+<p>A general term for any type of directed or undirected edge in a graph that represents a relationship between two <a href="#concept-vertex-type">Concept</a> vertices. These relationships are used to illustrate the semantic connections between different concepts.</p>
 <h4 id="concept-vertex-type">Concept Vertex Type</h4>
 <p>A type of vertex in a graph that represents a general idea or category derived from the content of documents. Concept vertices are used to categorize and connect related entities and documents based on shared themes or topics.</p>
 <p>Within TigerGraph CoPilot, a Concept Vertex Type has attributes for preferred labels, alternate labels, defintion, and history notes.</p>
