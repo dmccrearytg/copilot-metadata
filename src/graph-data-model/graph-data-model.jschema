@@ -1,0 +1,57 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Schema title",
+    "description": "Description of the schema",
+    "type": "object",
+    "properties": {
+        "propertyName": {
+            "description": "The propertyName description",
+            "type": "string"
+        },
+        "vertexTypes": {
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "VertexTypeName": {"type": "object"},
+                        "vertexTypeID": {"type": "object"},
+                        "property": {
+                            "type": "array",
+                            "items": [
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "attributeName": {"type": "string"},
+                                        "attributeType": {
+                                            "type": "string",
+                                            "enum": [
+                                                "STRING",
+                                                "INTEGER",
+                                                "DATETIME",
+                                                "SET",
+                                                "LIST"
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "edgeTypes": {
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "name": {"type": "object"}
+                    }
+                }
+            ]
+        },
+        "graph": {"type": "object"}
+    }
+}

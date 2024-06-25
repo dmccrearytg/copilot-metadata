@@ -15,6 +15,7 @@
     </meta>
     <projectTree name="solution-kit-project.xpr">
         <folder path="../concepts/"/>
+        <folder path="../graph-data-model/"/>
         <folder path="../transform/"/>
         <folder path="."/>
     </projectTree>
