@@ -88,6 +88,10 @@ Entities each may have a type such as Person, Location, Product, DateTime.
 When common entities are discovered they can also become promoted to also become a **Concept**
 and Concepts can then be grouped into categories to form Taxonomies.
 
+#### Graph RAG
+
+An architecture for combining graph representations with the RAG pattern to increase the quality of question answering systems over documents.
+
 #### History Notes
 
 Notes that provide historical context or track changes and developments related to a concept or entity in the graph over time.

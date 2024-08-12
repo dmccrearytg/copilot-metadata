@@ -13,6 +13,7 @@ nav:
   - Getting Started: getting-started.md
   - Concepts:
     - Introduction: concepts/index.md
+    - LLM Prompts: concepts/llm-prompts.md
     - Metadata Architecture: concepts/architecture.md
     - Metadata JSON File: concepts/json-file-format.md
     - Metadata Transformers: concepts/metadata-transformers.md
