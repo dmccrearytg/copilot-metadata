@@ -110,6 +110,10 @@ The file format used to store solution kit metadata.
 
 The file that describes the structure and definitions of Solution Kit metadata.
 
+#### MedGraphRAG
+I loved the MedGraphRAG paper.  I am promoting it on all my networks.
+Junde Wu
+
 #### Named Entity Resolution
 
 The process of identifying, disambiguating, and linking mentions of entities in text to unique identifiers, typically within a predefined set of entity vertices in a graph. This facilitates accurate analysis of relationships and interactions between entities across documents.

@@ -57,7 +57,7 @@ personas = [
  'Risk Analyst']
  ```
 
- Persona: Customer Service Representative 
+### Persona: Customer Service Representative 
 
 1. What is the current KYC status of [customer name or customer ID]?
 2. Are there any pending KYC documents for [customer name or customer ID]?
@@ -77,7 +77,7 @@ personas = [
 
 
 
-Persona: Branch Bank Manager 
+### Persona: Branch Bank Manager 
 
 1. What is the current progress of [customer name]'s KYC verification?
 2. Can you tell me the risk assessment result for [customer name]?
@@ -97,7 +97,7 @@ Persona: Branch Bank Manager
 
 
 
-Persona: Fraud Investigator 
+### Persona: Fraud Investigator 
 
 1. What is the latest transaction history for [customer name]?
 2. How many suspicious transactions have been detected in the last [time period]?
@@ -117,7 +117,7 @@ Persona: Fraud Investigator
 
 
 
-Persona: Compliance Officer 
+### Persona: Compliance Officer 
 
 1. What is the current financial risk of [Customer Name]?
 2. Could you provide the transaction history for [Customer Name] during [Time Period]?
@@ -142,7 +142,7 @@ Persona: Compliance Officer
 
 
 
-Persona: Risk Analyst 
+### Persona: Risk Analyst 
 
 1. What is the total number of high-risk customers in [specific time period]?
 2. Can you show me the transaction history of customer [customer ID / name]?
