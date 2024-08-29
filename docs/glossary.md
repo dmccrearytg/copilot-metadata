@@ -145,6 +145,10 @@ A detailed representation of a hypothetical user based on user research and real
 
 All questions are classified by the persona that might ask this question.
 
+#### POLE Entities
+
+The main proper nouns in a text file.  The acronym POLE stands for Persons, Organizations, Locations and Events.  POLE entities usually don't represent abstract concepts, but they are easier for a large-language model to detect within a text document, so they are often extracted in an early pass of a NLP workflow.
+
 #### Provenance
 
  Information about entities, activities, and people involved in producing a piece of data or thing, which can be used to form assessments about its quality, reliability or trustworthiness.

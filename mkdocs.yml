@@ -39,8 +39,9 @@ nav:
     - Inventory Management: questions/inventory-management.md
     - Network Digital Twin Knowledge Graph: questions/network-digital-twin-knolwedge-graph.md
   - Corpus Questions:
-    - pyTigerGraph FAQ: questions/pyTigerGraph-FAQ.md
-    = Earnings Call Ontology: questions/earnings-call-ontology.md
+    - Introduction: corpus-questions/index.md
+    - pyTigerGraph FAQ: corpus-questions/pyTigerGraph-FAQ.md
+    - Earnings Call Ontology:corpus- questions/earnings-call-ontology.md
   - Document Data Model: document-data-model.md
   - Glossary: glossary.md
   - Contact: contact.md
